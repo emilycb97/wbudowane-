@@ -14,7 +14,6 @@
 #include "lpc17xx_i2c.h"
 #include "lpc17xx_gpio.h"
 #include "lpc17xx_ssp.h"
-#include "lpc17xx_adc.h"
 #include "lpc17xx_timer.h"
 
 
@@ -26,6 +25,10 @@
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
+
+static void tempToString(double value, uint8_t buf, uint32_t len) {
+
+}
 
 static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
 {
@@ -126,49 +129,6 @@ static void init_ssp(void)
 
 }
 
-static void init_i2c(void)
-{
-	PINSEL_CFG_Type PinCfg;
-
-	/* Initialize I2C2 pin connect */
-	PinCfg.Funcnum = 2;
-	PinCfg.Pinnum = 10;
-	PinCfg.Portnum = 0;
-	PINSEL_ConfigPin(&PinCfg);
-	PinCfg.Pinnum = 11;
-	PINSEL_ConfigPin(&PinCfg);
-
-	// Initialize I2C peripheral
-	I2C_Init(LPC_I2C2, 100000);
-
-	/* Enable I2C1 operation */
-	I2C_Cmd(LPC_I2C2, ENABLE);
-}
-
-static void init_adc(void)
-{
-	PINSEL_CFG_Type PinCfg;
-
-	/*
-	 * Init ADC pin connect
-	 * AD0.0 on P0.23
-	 */
-	PinCfg.Funcnum = 1;
-	PinCfg.OpenDrain = 0;
-	PinCfg.Pinmode = 0;
-	PinCfg.Pinnum = 23;
-	PinCfg.Portnum = 0;
-	PINSEL_ConfigPin(&PinCfg);
-
-	/* Configuration for ADC :
-	 * 	Frequency at 0.2Mhz
-	 *  ADC channel 0, no Interrupt
-	 */
-	ADC_Init(LPC_ADC, 200000);
-	ADC_IntConfig(LPC_ADC,ADC_CHANNEL_0,DISABLE);
-	ADC_ChannelCmd(LPC_ADC,ADC_CHANNEL_0,ENABLE);
-
-}
 
 int main (void)
 {
@@ -206,7 +166,8 @@ int main (void)
 
         /* output values to OLED display */
 
-        intToString(t, buf, 10, 10);
+        //intToString(t, buf, 10, 10);
+        sprintf(buf, "%02d.%d C", t/10, t%10);
         oled_fillRect((1+9*6),1, 80, 8, OLED_COLOR_WHITE);
         oled_putString((1+9*6),1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 

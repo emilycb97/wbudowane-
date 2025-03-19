@@ -7,7 +7,6 @@ src/main.o src/main.d: ../src/main.c \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_i2c.h \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_gpio.h \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_ssp.h \
- C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_adc.h \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_timer.h \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/light.h \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/oled.h \
@@ -21,7 +20,6 @@ C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc_types.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_i2c.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_gpio.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_ssp.h:
-C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_adc.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_timer.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/light.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/oled.h:
