@@ -517,4 +517,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="com.crt.advproject"/>
+	<storageModule moduleId="openCmsis"/>
 </cproject>
