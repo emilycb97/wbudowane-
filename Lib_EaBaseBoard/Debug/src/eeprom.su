@@ -1,0 +1,6 @@
+../src/eeprom.c:56:12:I2CRead	72	static
+../src/eeprom.c:74:12:I2CWrite	72	static
+../src/eeprom.c:93:13:eepromDelay	16	static
+../src/eeprom.c:110:6:eeprom_init	4	static
+../src/eeprom.c:129:9:eeprom_read	24	static
+../src/eeprom.c:165:9:eeprom_write	48	static

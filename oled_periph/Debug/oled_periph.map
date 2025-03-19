@@ -1,0 +1,1315 @@
+Archive member included to satisfy reference by file (symbol)
+
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                              ./src/main.o (SystemCoreClock)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                              ./src/main.o (acc_init)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+                              ./src/main.o (light_init)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                              ./src/main.o (oled_init)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+                              ./src/main.o (temp_init)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+                              C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o) (font5x7)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                              ./src/main.o (ADC_Init)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                              C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o) (CLKPWR_GetPCLK)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                              C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o) (GPIO_SetDir)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                              ./src/main.o (I2C_Init)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                              ./src/main.o (PINSEL_ConfigPin)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                              ./src/main.o (SSP_Init)
+C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                              ./src/main.o (Timer0_Wait)
+c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+                              C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o) (__aeabi_uldivmod)
+c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                              c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
+                              c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a(libc_a-memset.o)
+                              C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o) (memset)
+
+Discarded input sections
+
+ .group         0x00000000        0xc ./src/cr_startup_lpc17.o
+ .group         0x00000000        0xc ./src/cr_startup_lpc17.o
+ .group         0x00000000        0xc ./src/cr_startup_lpc17.o
+ .group         0x00000000        0xc ./src/cr_startup_lpc17.o
+ .group         0x00000000        0xc ./src/cr_startup_lpc17.o
+ .group         0x00000000        0xc ./src/cr_startup_lpc17.o
+ .group         0x00000000        0xc ./src/cr_startup_lpc17.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc17.o
+ .text.SysTick_Handler
+                0x00000000        0x8 ./src/cr_startup_lpc17.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .group         0x00000000        0xc ./src/main.o
+ .text          0x00000000        0x0 ./src/main.o
+ .debug_macro   0x00000000      0xab4 ./src/main.o
+ .debug_macro   0x00000000       0x22 ./src/main.o
+ .debug_macro   0x00000000       0x8e ./src/main.o
+ .debug_macro   0x00000000       0x51 ./src/main.o
+ .debug_macro   0x00000000      0x103 ./src/main.o
+ .debug_macro   0x00000000       0x6a ./src/main.o
+ .debug_macro   0x00000000      0x1df ./src/main.o
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .text.SystemCoreClockUpdate
+                0x00000000      0x2e8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.getModeControl
+                0x00000000       0x2c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.acc_setRange
+                0x00000000       0x3e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.acc_setMode
+                0x00000000       0x36 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.readCommandReg
+                0x00000000       0x2c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_setMode
+                0x00000000       0x48 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_setWidth
+                0x00000000       0x88 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_setHiThreshold
+                0x00000000       0x4c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_setLoThreshold
+                0x00000000       0x4c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_setIrqInCycles
+                0x00000000       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_getIrqStatus
+                0x00000000       0x26 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_clearIrqStatus
+                0x00000000       0x32 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_shutdown
+                0x00000000       0x4e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x00000000      0x18c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_line
+                0x00000000      0x1b8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_circle
+                0x00000000      0x33c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.oled_rect
+                0x00000000       0x56 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x192 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000      0x2a6 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00000000       0x16 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00000000       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_DeInit
+                0x00000000       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GetData
+                0x00000000       0x2c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_BurstCmd
+                0x00000000       0x4c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_PowerdownCmd
+                0x00000000       0x4c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_EdgeStartConfig
+                0x00000000       0x60 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GlobalGetData
+                0x00000000       0x30 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .text.ADC_GlobalGetStatus
+                0x00000000       0x6c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.__WFI    0x00000000        0xe C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_Sleep
+                0x00000000       0x18 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepSleep
+                0x00000000       0x24 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_PowerDown
+                0x00000000       0x24 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepPowerDown
+                0x00000000       0x24 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordGetPointer
+                0x00000000       0x70 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteGetPointer
+                0x00000000       0x70 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_IntCmd
+                0x00000000       0x70 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_GetIntStatus
+                0x00000000       0xa0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_ClearInt
+                0x00000000       0x38 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetDir
+                0x00000000       0x24 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetValue
+                0x00000000       0x1e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ClearValue
+                0x00000000       0x1e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ReadValue
+                0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_IntCmd
+                0x00000000       0x24 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_GetIntStatus
+                0x00000000       0x26 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ClearInt
+                0x00000000       0x1e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_SetMask
+                0x00000000       0x4a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetDir
+                0x00000000       0xa2 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetMask
+                0x00000000       0xa2 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordSetValue
+                0x00000000       0x3e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordClearValue
+                0x00000000       0x3e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_HalfWordReadValue
+                0x00000000       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetDir
+                0x00000000       0x7c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetMask
+                0x00000000       0x88 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteSetValue
+                0x00000000       0x3a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteClearValue
+                0x00000000       0x3a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.FIO_ByteReadValue
+                0x00000000       0x3c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0xda C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_DeInit
+                0x00000000       0x80 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MasterHandler
+                0x00000000      0x410 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SlaveHandler
+                0x00000000      0x24c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SlaveTransferData
+                0x00000000      0x2b0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SetOwnSlaveAddr
+                0x00000000       0xf8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorModeConfig
+                0x00000000       0x84 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorModeCmd
+                0x00000000       0x98 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorGetDatabuffer
+                0x00000000       0x48 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MonitorHandler
+                0x00000000       0x50 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_MasterTransferComplete
+                0x00000000       0x34 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SlaveTransferComplete
+                0x00000000       0x34 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x18c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000      0x2fa C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x00000000       0xda C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_ConfigTraceFunc
+                0x00000000       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_SetI2C0Pins
+                0x00000000       0x38 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x00000000      0x140 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_DeInit
+                0x00000000       0x5c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_LoopBackCmd
+                0x00000000       0x6c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_SlaveOutputCmd
+                0x00000000       0x70 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetStatus
+                0x00000000       0x74 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_IntConfig
+                0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetRawIntStatus
+                0x00000000       0x6c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetRawIntStatusReg
+                0x00000000       0x3c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_GetIntStatus
+                0x00000000       0x6c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_ClearIntPending
+                0x00000000       0x54 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_DMACmd
+                0x00000000       0x90 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000      0x2fa C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x00000000       0xda C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .group         0x00000000        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .data          0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .bss           0x00000000        0x0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_GetIntCaptureStatus
+                0x00000000       0x9c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ClearIntCapturePending
+                0x00000000       0x88 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ConfigStructInit
+                0x00000000       0x38 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_DeInit
+                0x00000000       0x9c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ResetCounter
+                0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_UpdateMatchValue
+                0x00000000       0x90 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_ConfigCapture
+                0x00000000       0xdc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_GetCaptureValue
+                0x00000000       0x74 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.Timer0_us_Wait
+                0x00000000       0x74 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x1c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x22 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x7b7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x2c7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x2fa C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000      0x146 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00000000       0xda C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+ .ARM.extab.text.__udivmoddi4
+                0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a(libc_a-memset.o)
+ .data          0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a(libc_a-memset.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc17.o
+LOAD ./src/main.o
+LOAD C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a
+LOAD C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a
+LOAD C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a
+START GROUP
+LOAD c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a
+LOAD c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a
+LOAD c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libm.a
+LOAD c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libcr_newlib_semihost.a
+END GROUP
+                0x00000000                        __base_MFlash512 = 0x0
+                0x00000000                        __base_Flash = 0x0
+                0x00080000                        __top_MFlash512 = 0x80000
+                0x00080000                        __top_Flash = 0x80000
+                0x10000000                        __base_RamLoc32 = 0x10000000
+                0x10000000                        __base_RAM = 0x10000000
+                0x10008000                        __top_RamLoc32 = 0x10008000
+                0x10008000                        __top_RAM = 0x10008000
+                0x2007c000                        __base_RamAHB32 = 0x2007c000
+                0x2007c000                        __base_RAM2 = 0x2007c000
+                0x20084000                        __top_RamAHB32 = 0x20084000
+                0x20084000                        __top_RAM2 = 0x20084000
+
+.text           0x00000000     0x3538
+ FILL mask 0xff
+                0x00000000                        __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc17.o
+                0x00000000                g_pfnVectors
+                0x000000cc                        . = ALIGN (0x4)
+                0x000000cc                        __section_table_start = .
+                0x000000cc                        __data_section_table = .
+                0x000000cc        0x4 LONG 0x3540 LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x10 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x3540 LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                        __data_section_table_end = .
+                0x000000e4                        __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000010 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x348 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                        __bss_section_table_end = .
+                0x000000f4                        __section_table_end = .
+ *(.after_vectors*)
+ *(.text*)
+ .text.ResetISR
+                0x000000f4       0x5c ./src/cr_startup_lpc17.o
+                0x000000f4                ResetISR
+ .text.NMI_Handler
+                0x00000150        0x8 ./src/cr_startup_lpc17.o
+                0x00000150                NMI_Handler
+ .text.HardFault_Handler
+                0x00000158        0x8 ./src/cr_startup_lpc17.o
+                0x00000158                HardFault_Handler
+ .text.MemManage_Handler
+                0x00000160        0x8 ./src/cr_startup_lpc17.o
+                0x00000160                MemManage_Handler
+ .text.BusFault_Handler
+                0x00000168        0x8 ./src/cr_startup_lpc17.o
+                0x00000168                BusFault_Handler
+ .text.UsageFault_Handler
+                0x00000170        0x8 ./src/cr_startup_lpc17.o
+                0x00000170                UsageFault_Handler
+ .text.SVCall_Handler
+                0x00000178        0x8 ./src/cr_startup_lpc17.o
+                0x00000178                SVCall_Handler
+ .text.DebugMon_Handler
+                0x00000180        0x8 ./src/cr_startup_lpc17.o
+                0x00000180                DebugMon_Handler
+ .text.PendSV_Handler
+                0x00000188        0x8 ./src/cr_startup_lpc17.o
+                0x00000188                PendSV_Handler
+ .text.IntDefaultHandler
+                0x00000190        0x8 ./src/cr_startup_lpc17.o
+                0x00000190                TIMER2_IRQHandler
+                0x00000190                RIT_IRQHandler
+                0x00000190                I2C0_IRQHandler
+                0x00000190                USBActivity_IRQHandler
+                0x00000190                PWM1_IRQHandler
+                0x00000190                I2C1_IRQHandler
+                0x00000190                EINT2_IRQHandler
+                0x00000190                UART1_IRQHandler
+                0x00000190                EINT3_IRQHandler
+                0x00000190                CANActivity_IRQHandler
+                0x00000190                TIMER3_IRQHandler
+                0x00000190                UART0_IRQHandler
+                0x00000190                IntDefaultHandler
+                0x00000190                PLL0_IRQHandler
+                0x00000190                CAN_IRQHandler
+                0x00000190                PLL1_IRQHandler
+                0x00000190                SSP0_IRQHandler
+                0x00000190                I2S_IRQHandler
+                0x00000190                I2C2_IRQHandler
+                0x00000190                RTC_IRQHandler
+                0x00000190                TIMER0_IRQHandler
+                0x00000190                SPI_IRQHandler
+                0x00000190                EINT1_IRQHandler
+                0x00000190                TIMER1_IRQHandler
+                0x00000190                UART2_IRQHandler
+                0x00000190                ADC_IRQHandler
+                0x00000190                SSP1_IRQHandler
+                0x00000190                USB_IRQHandler
+                0x00000190                BOD_IRQHandler
+                0x00000190                WDT_IRQHandler
+                0x00000190                QEI_IRQHandler
+                0x00000190                EINT0_IRQHandler
+                0x00000190                DMA_IRQHandler
+                0x00000190                UART3_IRQHandler
+                0x00000190                MCPWM_IRQHandler
+                0x00000190                ENET_IRQHandler
+ .text.NVIC_SetPriority
+                0x00000198       0x54 ./src/main.o
+ .text.SysTick_Config
+                0x000001ec       0x44 ./src/main.o
+ .text.intToString
+                0x00000230       0xc8 ./src/main.o
+ .text.SysTick_Handler
+                0x000002f8       0x1c ./src/main.o
+                0x000002f8                SysTick_Handler
+ .text.getTicks
+                0x00000314       0x14 ./src/main.o
+ .text.init_ssp
+                0x00000328       0x78 ./src/main.o
+ .text.init_i2c
+                0x000003a0       0x48 ./src/main.o
+ .text.init_adc
+                0x000003e8       0x50 ./src/main.o
+ .text.main     0x00000438      0x2b8 ./src/main.o
+                0x00000438                main
+ .text.check_failed
+                0x000006f0        0xe ./src/main.o
+                0x000006f0                check_failed
+ *fill*         0x000006fe        0x2 ff
+ .text.SystemInit
+                0x00000700      0x140 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                0x00000700                SystemInit
+ .text.I2CRead  0x00000840       0x50 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.I2CWrite
+                0x00000890       0x50 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.getStatus
+                0x000008e0       0x2c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.setModeControl
+                0x0000090c       0x28 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .text.acc_init
+                0x00000934        0xe C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x00000934                acc_init
+ .text.acc_read
+                0x00000942       0x9c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                0x00000942                acc_read
+ *fill*         0x000009de        0x2 ff
+ .text.I2CRead  0x000009e0       0x50 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.I2CWrite
+                0x00000a30       0x50 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.readControlReg
+                0x00000a80       0x2c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .text.light_init
+                0x00000aac        0xc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+                0x00000aac                light_init
+ .text.light_enable
+                0x00000ab8       0x3c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+                0x00000ab8                light_enable
+ .text.light_read
+                0x00000af4       0x74 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+                0x00000af4                light_read
+ .text.light_setRange
+                0x00000b68       0x90 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+                0x00000b68                light_setRange
+ .text.writeCommand
+                0x00000bf8       0x48 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.writeData
+                0x00000c40       0x48 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.writeDataLen
+                0x00000c88       0x78 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.runInitSequence
+                0x00000d00       0xd4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.hLine    0x00000dd4       0x58 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .text.vLine    0x00000e2c       0x56 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ *fill*         0x00000e82        0x2 ff
+ .text.oled_init
+                0x00000e84       0x74 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00000e84                oled_init
+ .text.oled_putPixel
+                0x00000ef8      0x150 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00000ef8                oled_putPixel
+ .text.oled_fillRect
+                0x00001048       0x9e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00001048                oled_fillRect
+ *fill*         0x000010e6        0x2 ff
+ .text.oled_clearScreen
+                0x000010e8       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x000010e8                oled_clearScreen
+ .text.oled_putChar
+                0x0000114c       0xd8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x0000114c                oled_putChar
+ .text.oled_putString
+                0x00001224       0x52 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                0x00001224                oled_putString
+ *fill*         0x00001276        0x2 ff
+ .text.temp_init
+                0x00001278       0x24 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+                0x00001278                temp_init
+ .text.temp_read
+                0x0000129c       0xf0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+                0x0000129c                temp_read
+ .text.ADC_Init
+                0x0000138c       0x90 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x0000138c                ADC_Init
+ .text.ADC_StartCmd
+                0x0000141c       0x80 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x0000141c                ADC_StartCmd
+ .text.ADC_IntConfig
+                0x0000149c       0x9c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x0000149c                ADC_IntConfig
+ .text.ADC_ChannelCmd
+                0x00001538       0x60 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00001538                ADC_ChannelCmd
+ .text.ADC_ChannelGetData
+                0x00001598       0x4c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x00001598                ADC_ChannelGetData
+ .text.ADC_ChannelGetStatus
+                0x000015e4       0x7c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                0x000015e4                ADC_ChannelGetStatus
+ .text.CLKPWR_SetPCLKDiv
+                0x00001660       0x90 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00001660                CLKPWR_SetPCLKDiv
+ .text.CLKPWR_GetPCLKSEL
+                0x000016f0       0x48 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x000016f0                CLKPWR_GetPCLKSEL
+ .text.CLKPWR_GetPCLK
+                0x00001738       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00001738                CLKPWR_GetPCLK
+ .text.CLKPWR_ConfigPPWR
+                0x0000179c       0x58 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x0000179c                CLKPWR_ConfigPPWR
+ .text.GPIO_GetPointer
+                0x000017f4       0x70 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .text.GPIO_SetDir
+                0x00001864       0x4a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x00001864                GPIO_SetDir
+ .text.GPIO_SetValue
+                0x000018ae       0x2a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x000018ae                GPIO_SetValue
+ .text.GPIO_ClearValue
+                0x000018d8       0x2a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x000018d8                GPIO_ClearValue
+ .text.GPIO_ReadValue
+                0x00001902       0x2a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x00001902                GPIO_ReadValue
+ .text.NVIC_EnableIRQ
+                0x0000192c       0x30 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.NVIC_DisableIRQ
+                0x0000195c       0x34 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_getNum
+                0x00001990       0x48 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Start
+                0x000019d8       0x3a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Stop
+                0x00001a12       0x30 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_SendByte
+                0x00001a42       0x4a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_GetByte
+                0x00001a8c       0x52 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ *fill*         0x00001ade        0x2 ff
+ .text.I2C_SetClock
+                0x00001ae0       0xa4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .text.I2C_Init
+                0x00001b84       0xa4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00001b84                I2C_Init
+ .text.I2C_Cmd  0x00001c28       0x70 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00001c28                I2C_Cmd
+ .text.I2C_IntCmd
+                0x00001c98       0x88 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00001c98                I2C_IntCmd
+ .text.I2C_MasterTransferData
+                0x00001d20      0x2e8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                0x00001d20                I2C_MasterTransferData
+ .text.set_PinFunc
+                0x00002008       0x80 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.set_ResistorMode
+                0x00002088       0x80 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.set_OpenDrainMode
+                0x00002108       0x68 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .text.PINSEL_ConfigPin
+                0x00002170       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00002170                PINSEL_ConfigPin
+ *fill*         0x000021b6        0x2 ff
+ .text.setSSPclock
+                0x000021b8       0xc4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .text.SSP_Init
+                0x0000227c       0x9c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x0000227c                SSP_Init
+ .text.SSP_GetDataSize
+                0x00002318       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002318                SSP_GetDataSize
+ .text.SSP_ConfigStructInit
+                0x00002358       0x3c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002358                SSP_ConfigStructInit
+ .text.SSP_Cmd  0x00002394       0x6c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002394                SSP_Cmd
+ .text.SSP_SendData
+                0x00002400       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002400                SSP_SendData
+ .text.SSP_ReceiveData
+                0x00002440       0x3c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x00002440                SSP_ReceiveData
+ .text.SSP_ReadWrite
+                0x0000247c      0x34a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                0x0000247c                SSP_ReadWrite
+ *fill*         0x000027c6        0x2 ff
+ .text.getPClock
+                0x000027c8       0x58 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.converUSecToVal
+                0x00002820       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.converPtrToTimeNum
+                0x00002884       0x5c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .text.TIM_GetIntStatus
+                0x000028e0       0x98 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x000028e0                TIM_GetIntStatus
+ .text.TIM_ClearIntPending
+                0x00002978       0x88 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00002978                TIM_ClearIntPending
+ .text.TIM_Init
+                0x00002a00      0x184 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00002a00                TIM_Init
+ .text.TIM_Cmd  0x00002b84       0x70 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00002b84                TIM_Cmd
+ .text.TIM_ConfigMatch
+                0x00002bf4      0x188 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00002bf4                TIM_ConfigMatch
+ .text.Timer0_Wait
+                0x00002d7c       0x76 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00002d7c                Timer0_Wait
+ *fill*         0x00002df2        0x2 ff
+ .text          0x00002df4       0x30 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+                0x00002df4                __aeabi_uldivmod
+ .text.__udivmoddi4
+                0x00002e24      0x2b8 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x00002e24                __udivmoddi4
+ .text          0x000030dc        0x4 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
+                0x000030dc                __aeabi_idiv0
+                0x000030dc                __aeabi_ldiv0
+ .text.memset   0x000030e0       0xa0 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a(libc_a-memset.o)
+                0x000030e0                memset
+ *(.rodata .rodata.* .constdata .constdata.*)
+ .rodata.str1.4
+                0x00003180       0x6d ./src/main.o
+ *fill*         0x000031ed        0x3 ff
+ .rodata        0x000031f0        0x8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .rodata        0x000031f8      0x300 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+                0x000031f8                font5x7
+ .rodata.str1.4
+                0x000034f8        0xe C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ *fill*         0x00003506        0x2 ff
+ .rodata.str1.4
+                0x00003508        0xe C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ *fill*         0x00003516        0x2 ff
+ .rodata.str1.4
+                0x00003518        0xe C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ *fill*         0x00003526        0x2 ff
+ .rodata.str1.4
+                0x00003528       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x00003538                        . = ALIGN (0x4)
+
+.glue_7         0x00003538        0x0
+ .glue_7        0x00003538        0x0 linker stubs
+
+.glue_7t        0x00003538        0x0
+ .glue_7t       0x00003538        0x0 linker stubs
+
+.vfp11_veneer   0x00003538        0x0
+ .vfp11_veneer  0x00003538        0x0 linker stubs
+
+.v4_bx          0x00003538        0x0
+ .v4_bx         0x00003538        0x0 linker stubs
+
+.iplt           0x00003538        0x0
+ .iplt          0x00003538        0x0 ./src/cr_startup_lpc17.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx      0x00003538        0x8
+                0x00003538                        __exidx_start = .
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx.text.__udivmoddi4
+                0x00003538        0x8 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x00003540                        __exidx_end = .
+                0x00003540                        _etext = .
+
+.rel.dyn        0x00003540        0x0
+ .rel.iplt      0x00003540        0x0 ./src/cr_startup_lpc17.o
+
+.data_RAM2      0x2007c000        0x0 load address 0x00003540
+ FILL mask 0xff
+                [!provide]                        PROVIDE (__start_data_RAM2 = .)
+                [!provide]                        PROVIDE (__start_data_RamAHB32 = .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM2)
+ *(.data.$RamAHB32)
+ *(.data.$RAM2.*)
+ *(.data.$RamAHB32.*)
+                0x2007c000                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__end_data_RAM2 = .)
+                [!provide]                        PROVIDE (__end_data_RamAHB32 = .)
+
+.uninit_RESERVED
+                0x10000000        0x0
+                0x10000000                        _start_uninit_RESERVED = .
+ *(.bss.$RESERVED*)
+                0x10000000                        . = ALIGN (0x4)
+                0x10000000                        _end_uninit_RESERVED = .
+
+.data           0x10000000       0x10 load address 0x00003540
+ FILL mask 0xff
+                0x10000000                        _data = .
+                [!provide]                        PROVIDE (__start_data_RAM = .)
+                [!provide]                        PROVIDE (__start_data_RamLoc32 = .)
+ *(vtable)
+ *(.ramfunc*)
+ *(CodeQuickAccess)
+ *(DataQuickAccess)
+ *(RamFunction)
+ *(.data*)
+ .data          0x10000000        0x4 ./src/main.o
+ .data          0x10000004        0x4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                0x10000004                SystemCoreClock
+ .data          0x10000008        0x8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+                0x10000010                        . = ALIGN (0x4)
+                0x10000010                        _edata = .
+                [!provide]                        PROVIDE (__end_data_RAM = .)
+                [!provide]                        PROVIDE (__end_data_RamLoc32 = .)
+
+.igot.plt       0x10000010        0x0 load address 0x00003550
+ .igot.plt      0x10000010        0x0 ./src/cr_startup_lpc17.o
+
+.bss_RAM2       0x2007c000        0x0
+                [!provide]                        PROVIDE (__start_bss_RAM2 = .)
+                [!provide]                        PROVIDE (__start_bss_RamAHB32 = .)
+ *(.bss.$RAM2)
+ *(.bss.$RamAHB32)
+ *(.bss.$RAM2.*)
+ *(.bss.$RamAHB32.*)
+                0x2007c000                        . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                        PROVIDE (__end_bss_RAM2 = .)
+                [!provide]                        PROVIDE (__end_bss_RamAHB32 = .)
+
+.bss            0x10000010      0x348
+                0x10000010                        _bss = .
+                [!provide]                        PROVIDE (__start_bss_RAM = .)
+                [!provide]                        PROVIDE (__start_bss_RamLoc32 = .)
+ *(.bss*)
+ .bss           0x10000010        0xe ./src/main.o
+ *fill*         0x1000001e        0x2 
+ .bss           0x10000020      0x300 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .bss           0x10000320        0x4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .bss           0x10000324       0x34 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ *(COMMON)
+                0x10000358                        . = ALIGN (0x4)
+                0x10000358                        _ebss = .
+                [!provide]                        PROVIDE (__end_bss_RAM = .)
+                [!provide]                        PROVIDE (__end_bss_RamLoc32 = .)
+                [!provide]                        PROVIDE (end = .)
+
+.noinit_RAM2    0x2007c000        0x0
+                [!provide]                        PROVIDE (__start_noinit_RAM2 = .)
+                [!provide]                        PROVIDE (__start_noinit_RamAHB32 = .)
+ *(.noinit.$RAM2)
+ *(.noinit.$RamAHB32)
+ *(.noinit.$RAM2.*)
+ *(.noinit.$RamAHB32.*)
+                0x2007c000                        . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__end_noinit_RAM2 = .)
+                [!provide]                        PROVIDE (__end_noinit_RamAHB32 = .)
+
+.noinit         0x10000358        0x0
+                0x10000358                        _noinit = .
+                [!provide]                        PROVIDE (__start_noinit_RAM = .)
+                [!provide]                        PROVIDE (__start_noinit_RamLoc32 = .)
+ *(.noinit*)
+                0x10000358                        . = ALIGN (0x4)
+                0x10000358                        _end_noinit = .
+                [!provide]                        PROVIDE (__end_noinit_RAM = .)
+                [!provide]                        PROVIDE (__end_noinit_RamLoc32 = .)
+                [!provide]                        PROVIDE (_pvHeapStart = DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10008000                        PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
+                [!provide]                        PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+                0x00000000                        _image_start = LOADADDR (.text)
+                0x00003550                        _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00003550                        _image_size = (_image_end - _image_start)
+OUTPUT(oled_periph.axf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x6a01
+ .debug_info    0x00000000      0x1f7 ./src/cr_startup_lpc17.o
+ .debug_info    0x000001f7      0xeb4 ./src/main.o
+ .debug_info    0x000010ab      0x2fb C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_info    0x000013a6      0x55d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_info    0x00001903      0x78c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_info    0x0000208f      0xa37 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_info    0x00002ac6      0x15f C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_info    0x00002c25       0x62 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_info    0x00002c87      0x65c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_info    0x000032e3      0x5e0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_info    0x000038c3      0xdc4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_info    0x00004687      0xdd9 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_info    0x00005460      0x477 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_info    0x000058d7      0x7a5 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_info    0x0000607c      0x985 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_abbrev   0x00000000     0x1b3d
+ .debug_abbrev  0x00000000       0xec ./src/cr_startup_lpc17.o
+ .debug_abbrev  0x000000ec      0x30a ./src/main.o
+ .debug_abbrev  0x000003f6       0xf4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_abbrev  0x000004ea      0x1b2 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_abbrev  0x0000069c      0x223 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_abbrev  0x000008bf      0x26c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_abbrev  0x00000b2b       0xec C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_abbrev  0x00000c17       0x4a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_abbrev  0x00000c61      0x1d4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_abbrev  0x00000e35      0x1d5 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_abbrev  0x0000100a      0x239 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_abbrev  0x00001243      0x2fb C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_abbrev  0x0000153e      0x164 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_abbrev  0x000016a2      0x228 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_abbrev  0x000018ca      0x273 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_aranges  0x00000000      0x708
+ .debug_aranges
+                0x00000000       0x70 ./src/cr_startup_lpc17.o
+ .debug_aranges
+                0x00000070       0x68 ./src/main.o
+ .debug_aranges
+                0x000000d8       0x28 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_aranges
+                0x00000100       0x60 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_aranges
+                0x00000160       0x98 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_aranges
+                0x000001f8       0x90 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_aranges
+                0x00000288       0x28 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_aranges
+                0x000002b0       0x18 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_aranges
+                0x000002c8       0x80 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_aranges
+                0x00000348       0x60 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_aranges
+                0x000003a8       0xf8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_aranges
+                0x000004a0       0xd0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_aranges
+                0x00000570       0x48 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_aranges
+                0x000005b8       0xa8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_aranges
+                0x00000660       0xa8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_ranges   0x00000000      0x610
+ .debug_ranges  0x00000000       0x60 ./src/cr_startup_lpc17.o
+ .debug_ranges  0x00000060       0x58 ./src/main.o
+ .debug_ranges  0x000000b8       0x18 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_ranges  0x000000d0       0x50 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_ranges  0x00000120       0x88 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_ranges  0x000001a8       0x80 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_ranges  0x00000228       0x18 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_ranges  0x00000240       0x70 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_ranges  0x000002b0       0x50 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_ranges  0x00000300       0xe8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_ranges  0x000003e8       0xc0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_ranges  0x000004a8       0x38 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_ranges  0x000004e0       0x98 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_ranges  0x00000578       0x98 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_macro    0x00000000     0x5ae7
+ .debug_macro   0x00000000       0x79 ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000079      0xab4 ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000b2d       0x22 ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000b4f       0x8e ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000bdd       0x51 ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000c2e      0x103 ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000d31       0x6a ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000d9b      0x1df ./src/cr_startup_lpc17.o
+ .debug_macro   0x00000f7a       0xf5 ./src/main.o
+ .debug_macro   0x0000106f       0x1c ./src/main.o
+ .debug_macro   0x0000108b       0x22 ./src/main.o
+ .debug_macro   0x000010ad      0x7b7 ./src/main.o
+ .debug_macro   0x00001864      0x2c7 ./src/main.o
+ .debug_macro   0x00001b2b       0x64 ./src/main.o
+ .debug_macro   0x00001b8f      0x140 ./src/main.o
+ .debug_macro   0x00001ccf      0x192 ./src/main.o
+ .debug_macro   0x00001e61       0x46 ./src/main.o
+ .debug_macro   0x00001ea7      0x2a6 ./src/main.o
+ .debug_macro   0x0000214d       0xee ./src/main.o
+ .debug_macro   0x0000223b       0xed ./src/main.o
+ .debug_macro   0x00002328       0x16 ./src/main.o
+ .debug_macro   0x0000233e      0x113 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002451      0xaae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002eff       0x10 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002f0f      0x12e C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x0000303d      0x5b3 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x000035f0      0x7d5 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00003dc5      0x162 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x00003f27      0x18c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_macro   0x000040b3      0x126 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_macro   0x000041d9       0xdd C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x000042b6       0x5d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00004313       0x40 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_macro   0x00004353       0xae C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_macro   0x00004401       0x1a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_macro   0x0000441b      0x696 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_macro   0x00004ab1       0x8c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00004b3d       0xe8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00004c25      0x2fa C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00004f1f       0xda C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_macro   0x00004ff9       0x7a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00005073      0x2f4 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00005367       0x83 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x000053ea       0x95 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x0000547f      0x146 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_macro   0x000055c5       0x7a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x0000563f       0x8c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x000056cb      0x2a0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_macro   0x0000596b       0x95 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00005a00       0xe7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_line     0x00000000     0x57ee
+ .debug_line    0x00000000      0x451 ./src/cr_startup_lpc17.o
+ .debug_line    0x00000451      0x705 ./src/main.o
+ .debug_line    0x00000b56      0x40b C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x00000f61      0x41a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_line    0x0000137b      0x540 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_line    0x000018bb      0x832 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_line    0x000020ed      0x33b C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_line    0x00002428       0x8d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .debug_line    0x000024b5      0x56f C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_line    0x00002a24      0x404 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_line    0x00002e28      0x76a C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_line    0x00003592      0xd51 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_line    0x000042e3      0x391 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_line    0x00004674      0x8f7 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_line    0x00004f6b      0x883 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.debug_str      0x00000000    0x1100e
+ .debug_str     0x00000000     0x3cf7 ./src/cr_startup_lpc17.o
+                               0x3e58 (size before relaxing)
+ .debug_str     0x00003cf7     0x78cf ./src/main.o
+                               0xb624 (size before relaxing)
+ .debug_str     0x0000b5c6     0x1a7f C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                               0x8869 (size before relaxing)
+ .debug_str     0x0000d045      0x528 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+                               0x93f5 (size before relaxing)
+ .debug_str     0x0000d56d      0x3ce C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+                               0x948d (size before relaxing)
+ .debug_str     0x0000d93b      0x3a0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+                               0xa53c (size before relaxing)
+ .debug_str     0x0000dcdb       0xe9 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+                               0x893b (size before relaxing)
+ .debug_str     0x0000ddc4      0xe21 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+                               0x3bfa (size before relaxing)
+ .debug_str     0x0000ebe5     0x14bd C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+                               0xa45d (size before relaxing)
+ .debug_str     0x000100a2       0xaa C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                               0x9a5d (size before relaxing)
+ .debug_str     0x0001014c      0x3eb C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                               0x8dc7 (size before relaxing)
+ .debug_str     0x00010537      0x313 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+                               0xadd5 (size before relaxing)
+ .debug_str     0x0001084a      0x1f1 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                               0x8cee (size before relaxing)
+ .debug_str     0x00010a3b      0x17f C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+                               0xac7c (size before relaxing)
+ .debug_str     0x00010bba      0x454 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                               0xaaa7 (size before relaxing)
+
+.comment        0x00000000       0x45
+ .comment       0x00000000       0x45 ./src/cr_startup_lpc17.o
+                                 0x46 (size before relaxing)
+ .comment       0x00000045       0x46 ./src/main.o
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .comment       0x00000045       0x46 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d ./src/cr_startup_lpc17.o
+ .ARM.attributes
+                0x0000002d       0x2d ./src/main.o
+ .ARM.attributes
+                0x0000005a       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .ARM.attributes
+                0x00000087       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .ARM.attributes
+                0x000000b4       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .ARM.attributes
+                0x000000e1       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .ARM.attributes
+                0x0000010e       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .ARM.attributes
+                0x0000013b       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(font5x7.o)
+ .ARM.attributes
+                0x00000168       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .ARM.attributes
+                0x00000195       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .ARM.attributes
+                0x000001c2       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .ARM.attributes
+                0x000001ef       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .ARM.attributes
+                0x0000021c       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .ARM.attributes
+                0x00000249       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .ARM.attributes
+                0x00000276       0x2d C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .ARM.attributes
+                0x000002a3       0x1d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x000002c0       0x2d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000002ed       0x1d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000030a       0x2d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a(libc_a-memset.o)
+
+.debug_frame    0x00000000     0x1ac0
+ .debug_frame   0x00000000      0x120 ./src/cr_startup_lpc17.o
+ .debug_frame   0x00000120      0x16c ./src/main.o
+ .debug_frame   0x0000028c       0x64 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_frame   0x000002f0      0x14c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(acc.o)
+ .debug_frame   0x0000043c      0x24c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(light.o)
+ .debug_frame   0x00000688      0x244 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(oled.o)
+ .debug_frame   0x000008cc       0x58 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a(temp.o)
+ .debug_frame   0x00000924      0x1e8 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_adc.o)
+ .debug_frame   0x00000b0c      0x13c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_frame   0x00000c48      0x428 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_frame   0x00001070      0x37c C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_i2c.o)
+ .debug_frame   0x000013ec       0xfc C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_frame   0x000014e8      0x2a0 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_ssp.o)
+ .debug_frame   0x00001788      0x2ac C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_frame   0x00001a34       0x2c c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00001a60       0x34 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x00001a94       0x2c c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libc.a(libc_a-memset.o)
+
+.debug_line_str
+                0x00000000       0xd1
+ .debug_line_str
+                0x00000000       0xc5 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+ .debug_line_str
+                0x000000c5        0xc c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
+                                 0xc9 (size before relaxing)

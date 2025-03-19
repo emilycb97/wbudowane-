@@ -1,0 +1,5 @@
+../src/lpc17xx_gpdma.c:200:6:GPDMA_Init	8	static
+../src/lpc17xx_gpdma.c:229:8:GPDMA_Setup	32	static
+../src/lpc17xx_gpdma.c:364:6:GPDMA_ChannelCmd	24	static
+../src/lpc17xx_gpdma.c:393:11:GPDMA_IntGetStatus	16	static
+../src/lpc17xx_gpdma.c:435:6:GPDMA_ClearIntPending	16	static

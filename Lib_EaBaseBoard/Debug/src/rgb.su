@@ -1,0 +1,2 @@
+../src/rgb.c:42:6:rgb_init	8	static
+../src/rgb.c:60:6:rgb_setLeds	16	static
