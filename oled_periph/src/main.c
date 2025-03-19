@@ -172,26 +172,12 @@ static void init_adc(void)
 
 int main (void)
 {
-	/*
-    int32_t xoff = 0;
-    int32_t yoff = 0;
-    int32_t zoff = 0;
-
-    int8_t x = 0;
-    int8_t y = 0;
-    int8_t z = 0;
-	*/
     int32_t t = 0;
 
-
-
-    init_i2c();
     init_ssp();
-    init_adc();
 
     oled_init();
-    light_init();
-    acc_init();
+
 
     temp_init (&getTicks);
 
