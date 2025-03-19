@@ -26,10 +26,6 @@
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
 
-static void tempToString(double value, uint8_t buf, uint32_t len) {
-
-}
-
 static void intToString(int value, uint8_t* pBuf, uint32_t len, uint32_t base)
 {
     static const char* pAscii = "0123456789abcdefghijklmnopqrstuvwxyz";
@@ -129,12 +125,14 @@ static void init_ssp(void)
 
 }
 
+// 100 razy na sekunde
 
 int main (void)
 {
     int32_t t = 0;
 
     init_ssp();
+    joystick_init();
 
     oled_init();
 
@@ -146,9 +144,6 @@ int main (void)
 		    while (1);  // Capture error
 	}
 
-    /*
-     * Assume base board in zero-g position when reading first value.
-     */
 
     light_enable();
     light_setRange(LIGHT_RANGE_4000);
@@ -166,7 +161,6 @@ int main (void)
 
         /* output values to OLED display */
 
-        //intToString(t, buf, 10, 10);
         sprintf(buf, "%02d.%d C", t/10, t%10);
         oled_fillRect((1+9*6),1, 80, 8, OLED_COLOR_WHITE);
         oled_putString((1+9*6),1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
