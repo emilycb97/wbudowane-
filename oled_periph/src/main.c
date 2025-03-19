@@ -15,6 +15,7 @@
 #include "lpc17xx_gpio.h"
 #include "lpc17xx_ssp.h"
 #include "lpc17xx_timer.h"
+#include "lpc17xx_rtc.h"
 
 
 #include "light.h"
@@ -22,6 +23,7 @@
 #include "temp.h"
 #include "acc.h"
 
+#include "./myRtc.h"
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
@@ -133,6 +135,8 @@ int main (void)
 
     init_ssp();
     joystick_init();
+    rtc_init();
+    rtc_set_time();
 
     oled_init();
 
@@ -152,6 +156,7 @@ int main (void)
 
     oled_putString(1,1,  (uint8_t*)"Temp   : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
+
     while(1) {
 
 
@@ -162,9 +167,18 @@ int main (void)
         /* output values to OLED display */
 
         sprintf(buf, "%02d.%d C", t/10, t%10);
-        oled_fillRect((1+9*6),1, 80, 8, OLED_COLOR_WHITE);
+        //oled_fillRect((1+9*6),1, 80, 8, OLED_COLOR_WHITE);
         oled_putString((1+9*6),1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+        RTC_TIME_Type time;
+        rtc_get_time(&time);
 
+        sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+        //oled_fillRect(1, 10, 120, 26, OLED_COLOR_WHITE);
+        oled_putString(1, 10, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+
+        sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+        //oled_fillRect(1, 19, 120, 35, OLED_COLOR_WHITE);
+        oled_putString(1, 19, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
         /* delay */
         Timer0_Wait(200);
