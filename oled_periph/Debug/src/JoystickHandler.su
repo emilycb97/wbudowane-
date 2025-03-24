@@ -1,0 +1,4 @@
+../src/JoystickHandler.c:20:6:joystick_init	24	static
+../src/JoystickHandler.c:34:9:joystick_read	8	static
+../src/JoystickHandler.c:40:6:joystick_checkAlarm	48	static
+../src/JoystickHandler.c:53:6:joystick_setAlarm	40	static

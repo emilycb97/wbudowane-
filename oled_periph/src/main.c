@@ -8,8 +8,6 @@
  *
  ******************************************************************************/
 
-
-
 #include "lpc17xx_pinsel.h"
 #include "lpc17xx_gpio.h"
 #include "lpc17xx_ssp.h"
@@ -25,23 +23,20 @@
 #include "pca9532.h"
 
 #include "./myRtc.h"
-
-
+#include "./JoystickHandler.h"
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
 
 void SysTick_Handler(void) {
-    msTicks++;
+	msTicks++;
 }
 
-static uint32_t getTicks(void)
-{
-    return msTicks;
+static uint32_t getTicks(void) {
+	return msTicks;
 }
 
-static void init_ssp(void)
-{
+static void init_ssp(void) {
 	SSP_CFG_Type SSP_ConfigStruct;
 	PINSEL_CFG_Type PinCfg;
 
@@ -79,109 +74,136 @@ static void init_ssp(void)
 
 // 100 razy na sekunde
 
-int main (void)
-{
-    int32_t t = 0;
-    uint32_t cnt = 0;
-       uint16_t ledOn = 0;
-       uint16_t ledOff = 0;
-       uint8_t dir = 0;
-    init_ssp();
-    joystick_init();
-    rtc_init();
-    rtc_set_time();
-    PINSEL_CFG_Type PinCfg;
+int main(void) {
+	int32_t t = 0;
+	uint32_t cnt = 0;
+	uint16_t ledOn = 0;
+	uint16_t ledOff = 0;
+	uint8_t dir = 0;
+	uint8_t joy = 0;
+	RTC_TIME_Type time2;
+	time2.SEC = 0;
+	time2.MIN = 00;
+	time2.HOUR = 00; // 14:30:00
+	init_ssp();
+	joystick_init();
+	rtc_init();
+	rtc_set_time();
+	PINSEL_CFG_Type PinCfg;
 
+	oled_init();
 
-    oled_init();
-
-
-    temp_init (&getTicks);
-
+	temp_init(&getTicks);
 
 	if (SysTick_Config(SystemCoreClock / 1000)) {
-		    while (1);  // Capture error
+		while (1)
+			;  // Capture error
 	}
 
+	light_enable();
+	light_setRange(LIGHT_RANGE_4000);
 
-    light_enable();
-    light_setRange(LIGHT_RANGE_4000);
+	oled_clearScreen(OLED_COLOR_WHITE);
 
-    oled_clearScreen(OLED_COLOR_WHITE);
+	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
+			OLED_COLOR_WHITE);
 
-    oled_putString(1,1,  (uint8_t*)"Temp   : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+	PinCfg.Funcnum = 2;
+	PinCfg.Pinnum = 10;
+	PinCfg.Portnum = 0;
+	PINSEL_ConfigPin(&PinCfg);
+	PinCfg.Pinnum = 11;
+	PINSEL_ConfigPin(&PinCfg);
+	// Initialize I2C peripheral
+	I2C_Init(LPC_I2C2, 100000);
 
-    PinCfg.Funcnum = 2;
-    PinCfg.Pinnum = 10;
-    PinCfg.Portnum = 0;
-    PINSEL_ConfigPin(&PinCfg);
-    PinCfg.Pinnum = 11;
-    PINSEL_ConfigPin(&PinCfg);
-    // Initialize I2C peripheral
-    		I2C_Init(LPC_I2C2, 100000);
+	/* Enable I2C1 operation */
+	I2C_Cmd(LPC_I2C2, ENABLE);
+	pca9532_init();
 
-    		/* Enable I2C1 operation */
-    		I2C_Cmd(LPC_I2C2, ENABLE);
-    pca9532_init();
+	while (1) {
 
+		/* Temperature */
+		t = temp_read();
 
-    while(1) {
+		/* output values to OLED display */
 
+		sprintf(buf, "%02d.%d C", t / 10, t % 10);
+		//oled_fillRect((1+9*6),1, 80, 8, OLED_COLOR_WHITE);
+		oled_putString((1 + 9 * 6), 1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+		RTC_TIME_Type time;
+		rtc_get_time(&time);
 
-        /* Temperature */
-        t = temp_read();
+		sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
+		//oled_fillRect(1, 10, 120, 26, OLED_COLOR_WHITE);
+		oled_putString(1, 10, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
+		sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
+		//oled_fillRect(1, 19, 120, 35, OLED_COLOR_WHITE);
+		oled_putString(1, 19, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
-        /* output values to OLED display */
+		oled_putString(1, 28, (uint8_t*) "Timer   : ", OLED_COLOR_BLACK,
+				OLED_COLOR_WHITE);
+		sprintf(buf, "%02d:%02d:%02d", time2.HOUR, time2.MIN, time2.SEC);
+		oled_putString(1, 36, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+		/* dont work
+		joy = joystick_read();
 
-        sprintf(buf, "%02d.%d C", t/10, t%10);
-        //oled_fillRect((1+9*6),1, 80, 8, OLED_COLOR_WHITE);
-        oled_putString((1+9*6),1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
-        RTC_TIME_Type time;
-        rtc_get_time(&time);
+		if ((joy & JOYSTICK_CENTER) != 0) {
+			continue;
+		}
 
-        sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
-        //oled_fillRect(1, 10, 120, 26, OLED_COLOR_WHITE);
-        oled_putString(1, 10, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+		if ((joy & JOYSTICK_DOWN) != 0) {
 
-        sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
-        //oled_fillRect(1, 19, 120, 35, OLED_COLOR_WHITE);
-        oled_putString(1, 19, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+		}
 
-        if (cnt < 16)
-                    ledOn |= (1 << cnt);
-                if (cnt > 15)
-                    ledOn &= ~( 1 << (cnt - 16) );
+		if (joy == JOYSTICK_UP) {
+			time2.HOUR = 1;
+		}
 
-                if (cnt > 15)
-                    ledOff |= ( 1 << (cnt - 16) );
-                if (cnt < 16)
-                    ledOff &= ~(1 << cnt);
+		if ((joy & JOYSTICK_LEFT) != 0) {
 
-                pca9532_setLeds(ledOn, ledOff);
+		}
 
-                if (dir) {
-                    if (cnt == 0)
-                        cnt = 31;
-                    else
-                        cnt--;
+		if ((joy & JOYSTICK_RIGHT) != 0) {
 
-                } else {
-                    cnt++;
-                    if (cnt >= 32)
-                        cnt = 0;
-                }
-        /* delay */
-        Timer0_Wait(1000);
-    }
+		}
+		*/
+
+		if (cnt < 16)
+			ledOn |= (1 << cnt);
+		if (cnt > 15)
+			ledOn &= ~(1 << (cnt - 16));
+
+		if (cnt > 15)
+			ledOff |= (1 << (cnt - 16));
+		if (cnt < 16)
+			ledOff &= ~(1 << cnt);
+
+		pca9532_setLeds(ledOn, ledOff);
+
+		if (dir) {
+			if (cnt == 0)
+				cnt = 31;
+			else
+				cnt--;
+
+		} else {
+			cnt++;
+			if (cnt >= 32)
+				cnt = 0;
+		}
+		/* delay */
+		Timer0_Wait(200);
+	}
 
 }
 
-void check_failed(uint8_t *file, uint32_t line)
-{
+void check_failed(uint8_t *file, uint32_t line) {
 	/* User can add his own implementation to report the file name and line number,
 	 ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
 
 	/* Infinite loop */
-	while(1);
+	while (1)
+		;
 }

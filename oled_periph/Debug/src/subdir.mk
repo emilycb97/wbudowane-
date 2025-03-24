@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/JoystickHandler.c \
 ../src/cr_startup_lpc17.c \
 ../src/main.c \
 ../src/myRtc.c 
 
 C_DEPS += \
+./src/JoystickHandler.d \
 ./src/cr_startup_lpc17.d \
 ./src/main.d \
 ./src/myRtc.d 
 
 OBJS += \
+./src/JoystickHandler.o \
 ./src/cr_startup_lpc17.o \
 ./src/main.o \
 ./src/myRtc.o 
@@ -31,7 +34,7 @@ src/%.o: ../src/%.c src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o
+	-$(RM) ./src/JoystickHandler.d ./src/JoystickHandler.o ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o
 
 .PHONY: clean-src
 
