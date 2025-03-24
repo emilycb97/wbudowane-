@@ -11,19 +11,22 @@
 
 
 #include "lpc17xx_pinsel.h"
-#include "lpc17xx_i2c.h"
 #include "lpc17xx_gpio.h"
 #include "lpc17xx_ssp.h"
 #include "lpc17xx_timer.h"
 #include "lpc17xx_rtc.h"
-
+#include "lpc17xx_i2c.h"
 
 #include "light.h"
 #include "oled.h"
 #include "temp.h"
 #include "acc.h"
+#include "joystick.h"
+#include "pca9532.h"
 
 #include "./myRtc.h"
+
+
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
@@ -79,11 +82,16 @@ static void init_ssp(void)
 int main (void)
 {
     int32_t t = 0;
-
+    uint32_t cnt = 0;
+       uint16_t ledOn = 0;
+       uint16_t ledOff = 0;
+       uint8_t dir = 0;
     init_ssp();
     joystick_init();
     rtc_init();
     rtc_set_time();
+    PINSEL_CFG_Type PinCfg;
+
 
     oled_init();
 
@@ -102,6 +110,19 @@ int main (void)
     oled_clearScreen(OLED_COLOR_WHITE);
 
     oled_putString(1,1,  (uint8_t*)"Temp   : ", OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+
+    PinCfg.Funcnum = 2;
+    PinCfg.Pinnum = 10;
+    PinCfg.Portnum = 0;
+    PINSEL_ConfigPin(&PinCfg);
+    PinCfg.Pinnum = 11;
+    PINSEL_ConfigPin(&PinCfg);
+    // Initialize I2C peripheral
+    		I2C_Init(LPC_I2C2, 100000);
+
+    		/* Enable I2C1 operation */
+    		I2C_Cmd(LPC_I2C2, ENABLE);
+    pca9532_init();
 
 
     while(1) {
@@ -127,8 +148,31 @@ int main (void)
         //oled_fillRect(1, 19, 120, 35, OLED_COLOR_WHITE);
         oled_putString(1, 19, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
+        if (cnt < 16)
+                    ledOn |= (1 << cnt);
+                if (cnt > 15)
+                    ledOn &= ~( 1 << (cnt - 16) );
+
+                if (cnt > 15)
+                    ledOff |= ( 1 << (cnt - 16) );
+                if (cnt < 16)
+                    ledOff &= ~(1 << cnt);
+
+                pca9532_setLeds(ledOn, ledOff);
+
+                if (dir) {
+                    if (cnt == 0)
+                        cnt = 31;
+                    else
+                        cnt--;
+
+                } else {
+                    cnt++;
+                    if (cnt >= 32)
+                        cnt = 0;
+                }
         /* delay */
-        Timer0_Wait(200);
+        Timer0_Wait(1000);
     }
 
 }
