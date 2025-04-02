@@ -11,9 +11,9 @@ RTC_TIME_Type time;
 
 time.SEC = 0;
 time.MIN = 30;
-time.HOUR = 14; // 14:30:00
-time.DOM = 20; // 20-ty dzień miesiąca
-time.MONTH = 3; // Marzec
+time.HOUR = 14;
+time.DOM = 20;
+time.MONTH = 3;
 time.YEAR = 2025;
 
 RTC_SetFullTime(LPC_RTC, &time);

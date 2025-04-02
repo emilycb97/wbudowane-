@@ -22,7 +22,7 @@
 #include "pca9532.h"
 
 #include "./myRtc.h"
-#include "./JoystickHandler.h"
+
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
@@ -110,11 +110,9 @@ int main(void) {
 			;  // Capture error
 	}
 
-
-	// Initialize I2C peripheral
-
-
 	int32_t temperature = 0;
+	RTC_TIME_Type time;
+
 	while (1) {
 
 		/*get temperature multiplied by 10 */
@@ -123,7 +121,7 @@ int main(void) {
 		/* output values to OLED display */
 		sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
 		oled_putString((1 + 9 * 6), 1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
-		RTC_TIME_Type time;
+
 		rtc_get_time(&time);
 
 		sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
