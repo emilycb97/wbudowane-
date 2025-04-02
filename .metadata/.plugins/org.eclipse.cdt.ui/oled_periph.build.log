@@ -1,8 +1,8 @@
-17:39:43 **** Clean-only build of configuration Debug for project oled_periph ****
+17:56:01 **** Clean-only build of configuration Debug for project oled_periph ****
 make -r -j16 clean 
 rm -rf ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/screenManagment.d ./src/screenManagment.o
 rm -rf oled_periph.axf
  
 
-17:39:43 Build Finished. 0 errors, 0 warnings. (took 97ms)
+17:56:01 Build Finished. 0 errors, 0 warnings. (took 102ms)
 

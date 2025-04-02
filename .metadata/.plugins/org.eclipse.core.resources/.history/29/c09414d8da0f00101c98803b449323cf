@@ -122,8 +122,8 @@ void lm75_read(uint8_t *buf) {
 
 void barometer_readID(uint8_t *buf) {
 	buf[0] = 0xD0;// rejestr ID
-	I2CWrite(BMP180_I2C_ADDR, buf, 1);
-	I2CRead(BMP180_I2C_ADDR, buf, 1);
+	I2CWrite(BMP180_I2C_ID_ADDR, buf, 1);
+	I2CRead(BMP180_I2C_ID_ADDR, buf, 1);
 }
 
 int main(void) {

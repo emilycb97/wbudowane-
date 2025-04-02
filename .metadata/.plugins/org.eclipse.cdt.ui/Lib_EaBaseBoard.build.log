@@ -1,8 +1,8 @@
-17:39:43 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+17:56:01 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
 make -r -j16 clean 
 rm -rf ./src/acc.d ./src/acc.o ./src/eeprom.d ./src/eeprom.o ./src/flash.d ./src/flash.o ./src/font5x7.d ./src/font5x7.o ./src/joystick.d ./src/joystick.o ./src/led7seg.d ./src/led7seg.o ./src/light.d ./src/light.o ./src/oled.d ./src/oled.o ./src/pca9532.d ./src/pca9532.o ./src/rgb.d ./src/rgb.o ./src/rotary.d ./src/rotary.o ./src/temp.d ./src/temp.o ./src/uart2.d ./src/uart2.o
 rm -rf libLib_EaBaseBoard.a
  
 
-17:39:43 Build Finished. 0 errors, 0 warnings. (took 98ms)
+17:56:01 Build Finished. 0 errors, 0 warnings. (took 104ms)
 
