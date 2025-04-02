@@ -1,11 +1,10 @@
 /*****************************************************************************
- *   Peripherals such as temp sensor, light sensor, accelerometer,
- *   and trim potentiometer are monitored and values are written to
- *   the OLED display.
- *
- *   Copyright(C) 2010, Embedded Artists AB
- *   All rights reserved.
- *
+ * Stacja Pogodowa
+ * Skład zespołu:
+ * 1) Gabriela Szczuka (234983/251645)
+ * 2) Amelka Garnys (251514)
+ * 3) Emilia Szczerba (251643)
+ * 4) Mikołaj Pawłoś (258681)
  ******************************************************************************/
 
 #include "lpc17xx_pinsel.h"
@@ -69,13 +68,9 @@ static void init_ssp(void) {
 
 	// Enable SSP peripheral
 	SSP_Cmd(LPC_SSP1, ENABLE);
-
 }
 
-// 100 razy na sekunde
-
 int main(void) {
-	int32_t t = 0;
 	uint32_t cnt = 0;
 	uint16_t ledOn = 0;
 	uint16_t ledOff = 0;
@@ -85,20 +80,23 @@ int main(void) {
 	time2.SEC = 0;
 	time2.MIN = 00;
 	time2.HOUR = 00; // 14:30:00
+
 	init_ssp();
 	joystick_init();
 	rtc_init();
 	rtc_set_time();
+
 	PINSEL_CFG_Type PinCfg;
 	PinCfg.Funcnum = 2;
-		PinCfg.Pinnum = 10;
-		PinCfg.Portnum = 0;
-		PINSEL_ConfigPin(&PinCfg);
-		PinCfg.Pinnum = 11;
-		PINSEL_ConfigPin(&PinCfg);
+	PinCfg.Pinnum = 10;
+	PinCfg.Portnum = 0;
+	PINSEL_ConfigPin(&PinCfg);
+	PinCfg.Pinnum = 11;
+	PINSEL_ConfigPin(&PinCfg);
 	I2C_Init(LPC_I2C2, 100000);
-		I2C_Cmd(LPC_I2C2, ENABLE);
-		pca9532_init();
+	I2C_Cmd(LPC_I2C2, ENABLE);
+	pca9532_init();
+
 	oled_init();
 
 	temp_init(&getTicks);
@@ -116,32 +114,25 @@ int main(void) {
 	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
 			OLED_COLOR_WHITE);
 
-
 	// Initialize I2C peripheral
 
 
-	/* Enable I2C1 operation */
-
-
+	int32_t temperature = 0;
 	while (1) {
 
-		/* Temperature */
-		t = temp_read();
+		/*get temperature multiplied by 10 */
+		temperature = temp_read();
 
 		/* output values to OLED display */
-
-		sprintf(buf, "%02d.%d C", t / 10, t % 10);
-		//oled_fillRect((1+9*6),1, 80, 8, OLED_COLOR_WHITE);
+		sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
 		oled_putString((1 + 9 * 6), 1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 		RTC_TIME_Type time;
 		rtc_get_time(&time);
 
 		sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
-		//oled_fillRect(1, 10, 120, 26, OLED_COLOR_WHITE);
 		oled_putString(1, 10, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
 		sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
-		//oled_fillRect(1, 19, 120, 35, OLED_COLOR_WHITE);
 		oled_putString(1, 19, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
 		oled_putString(1, 28, (uint8_t*) "Timer   : ", OLED_COLOR_BLACK,
@@ -149,28 +140,28 @@ int main(void) {
 		sprintf(buf, "%02d:%02d:%02d", time2.HOUR, time2.MIN, time2.SEC);
 		oled_putString(1, 36, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 		/* dont work
-		joy = joystick_read();
+		 joy = joystick_read();
 
-		if ((joy & JOYSTICK_CENTER) != 0) {
-			continue;
-		}
+		 if ((joy & JOYSTICK_CENTER) != 0) {
+		 continue;
+		 }
 
-		if ((joy & JOYSTICK_DOWN) != 0) {
+		 if ((joy & JOYSTICK_DOWN) != 0) {
 
-		}
+		 }
 
-		if (joy == JOYSTICK_UP) {
-			time2.HOUR = 1;
-		}
+		 if (joy == JOYSTICK_UP) {
+		 time2.HOUR = 1;
+		 }
 
-		if ((joy & JOYSTICK_LEFT) != 0) {
+		 if ((joy & JOYSTICK_LEFT) != 0) {
 
-		}
+		 }
 
-		if ((joy & JOYSTICK_RIGHT) != 0) {
+		 if ((joy & JOYSTICK_RIGHT) != 0) {
 
-		}
-		*/
+		 }
+		 */
 
 		if (cnt < 16)
 			ledOn |= (1 << cnt);
