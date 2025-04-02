@@ -420,3 +420,83 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 
 !ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 16:14:29.384
 !MESSAGE Telnet session connected on port 3330->3648 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:29:04.459
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:29:05.465
+!MESSAGE RedlinkServer telnet session connected on port 3025->3937 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:32:23.532
+!MESSAGE cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.w3.org/2001/XInclude":include}'. One of '{include, parameters, script}' is expected.
+
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:32:23.877
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.5.30/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=4002, -g, -mi, -2, -pLPC1769, -vendor=NXP, --reset=VECTRESET, -ProbeHandle=1, -CoreIndex=0, --flash-hashing, --flash-driver, LPC175x_6x_512.cfx, -x, C:/nxp/MCUXpressoIDE_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.bin.win32_11.9.1.202402080819/binaries/, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 16:32:26.410
+!MESSAGE Telnet session connected on port 3330->4015 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:33:42.331
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:33:43.337
+!MESSAGE RedlinkServer telnet session connected on port 3025->4043 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:33:45.684
+!MESSAGE cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.w3.org/2001/XInclude":include}'. One of '{include, parameters, script}' is expected.
+
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:33:46.026
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.5.30/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=4046, -g, -mi, -2, -pLPC1769, -vendor=NXP, --reset=VECTRESET, -ProbeHandle=1, -CoreIndex=0, --flash-hashing, --flash-driver, LPC175x_6x_512.cfx, -x, C:/nxp/MCUXpressoIDE_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.bin.win32_11.9.1.202402080819/binaries/, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 16:33:48.531
+!MESSAGE Telnet session connected on port 3330->4058 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:34:19.395
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:34:20.410
+!MESSAGE RedlinkServer telnet session connected on port 3025->4068 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:34:22.769
+!MESSAGE cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.w3.org/2001/XInclude":include}'. One of '{include, parameters, script}' is expected.
+
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:34:23.126
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.5.30/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=4070, -g, -mi, -2, -pLPC1769, -vendor=NXP, --reset=VECTRESET, -ProbeHandle=1, -CoreIndex=0, --flash-hashing, --flash-driver, LPC175x_6x_512.cfx, -x, C:/nxp/MCUXpressoIDE_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.bin.win32_11.9.1.202402080819/binaries/, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 16:34:25.827
+!MESSAGE Telnet session connected on port 3330->4085 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:37:08.289
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:37:09.305
+!MESSAGE RedlinkServer telnet session connected on port 3025->4136 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:37:11.676
+!MESSAGE cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.w3.org/2001/XInclude":include}'. One of '{include, parameters, script}' is expected.
+
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:37:12.016
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.5.30/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=4137, -g, -mi, -2, -pLPC1769, -vendor=NXP, --reset=VECTRESET, -ProbeHandle=1, -CoreIndex=0, --flash-hashing, --flash-driver, LPC175x_6x_512.cfx, -x, C:/nxp/MCUXpressoIDE_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.bin.win32_11.9.1.202402080819/binaries/, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 16:37:14.705
+!MESSAGE Telnet session connected on port 3330->4150 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:38:25.175
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:38:26.191
+!MESSAGE RedlinkServer telnet session connected on port 3025->4176 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 16:38:28.622
+!MESSAGE cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.w3.org/2001/XInclude":include}'. One of '{include, parameters, script}' is expected.
+
+
+!ENTRY com.crt.log 1 0 2025-04-02 16:38:28.973
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.5.30/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=4178, -g, -mi, -2, -pLPC1769, -vendor=NXP, --reset=VECTRESET, -ProbeHandle=1, -CoreIndex=0, --flash-hashing, --flash-driver, LPC175x_6x_512.cfx, -x, C:/nxp/MCUXpressoIDE_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.bin.win32_11.9.1.202402080819/binaries/, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 16:38:31.673
+!MESSAGE Telnet session connected on port 3330->4191 @ 127.0.0.1

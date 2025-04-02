@@ -20,12 +20,15 @@
 #include "acc.h"
 #include "joystick.h"
 #include "pca9532.h"
+#include <stdio.h>
 
 #include "./myRtc.h"
 #include "./ledStrips.h"
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
+#define I2CDEV LPC_I2C2
+#define LM75_I2C_ADDR (0x4D)
 
 void SysTick_Handler(void) {
 	msTicks++;
@@ -70,6 +73,31 @@ static void init_ssp(void) {
 	SSP_Cmd(LPC_SSP1, ENABLE);
 }
 
+int I2CRead(uint8_t addr, uint8_t* buf, uint32_t len)
+{
+	I2C_M_SETUP_Type rxsetup;
+
+	rxsetup.sl_addr7bit = addr;
+	rxsetup.tx_data = NULL;	// Get address to read at writing address
+	rxsetup.tx_length = 0;
+	rxsetup.rx_data = buf;
+	rxsetup.rx_length = len;
+	rxsetup.retransmissions_max = 3;
+
+	if (I2C_MasterTransferData(I2CDEV, &rxsetup, I2C_TRANSFER_POLLING) == SUCCESS){
+		return (0);
+	} else {
+		return (-1);
+	}
+}
+
+void lm75_read (uint8_t *buf) {
+    buf[0] = 0;
+    buf[1] = 0;
+    I2CRead(LM75_I2C_ADDR, buf, 2);
+}
+
+
 
 int main(void) {
 	LED_STRIP_CONF ledStrip;
@@ -82,7 +110,7 @@ int main(void) {
 	RTC_TIME_Type time2;
 	time2.SEC = 0;
 	time2.MIN = 00;
-	time2.HOUR = 00; // 14:30:00
+	time2.HOUR = 00;
 
 	init_ssp();
 	joystick_init();
@@ -115,8 +143,9 @@ int main(void) {
 	}
 
 	int32_t temperature = 0;
+	uint8_t bufTemp[2] = {0};
 	RTC_TIME_Type time;
-
+	lm75_read(bufTemp);
 	while (1) {
 
 		/*get temperature multiplied by 10 */
@@ -139,6 +168,8 @@ int main(void) {
 		sprintf(buf, "%02d:%02d:%02d", time2.HOUR, time2.MIN, time2.SEC);
 		oled_putString(1, 36, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
+		sprintf(buf, "%02d.%d C", bufTemp[0], bufTemp[1]);
+		oled_putString(1, 44, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 		manageLedStrips(&ledStrip);
 
 		/* delay */
