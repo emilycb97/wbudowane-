@@ -1,0 +1,24 @@
+#include "screenManagment.h"
+
+void oled_start() {
+	oled_init();
+	oled_clearScreen(OLED_COLOR_WHITE);
+	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
+			OLED_COLOR_WHITE);
+	oled_putString(1, 28, (uint8_t*) "Timer   : ", OLED_COLOR_BLACK,
+					OLED_COLOR_WHITE);
+}
+
+void oled_show_temp1(init32_t temp) {
+	sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
+	oled_putString((1 + 9 * 6), 1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+}
+
+void oled_show_temp2() {
+	sprintf(buf, "%02d.%d C", bufTemp[0], bufTemp[1]);
+	oled_putString(1, 44, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+}
+
+void oled_show_timer() {
+
+}

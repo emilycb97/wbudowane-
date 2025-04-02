@@ -1,0 +1,14 @@
+/*
+ * screenManagment.h
+ *
+ *  Created on: 2 kwi 2025
+ *      Author: student
+ */
+
+#ifndef SCREENMANAGMENT_H_
+#define SCREENMANAGMENT_H_
+
+void oled_start();
+void oled_show_temp1();
+
+#endif /* SCREENMANAGMENT_H_ */

@@ -1,9 +1,9 @@
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:1586:22:NVIC_SetPriority	16	static
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:1694:26:SysTick_Config	16	static
-../src/main.c:33:6:SysTick_Handler	4	static
-../src/main.c:37:17:getTicks	4	static
-../src/main.c:41:13:init_ssp	40	static
-../src/main.c:76:5:I2CRead	72	static
-../src/main.c:94:6:lm75_read	16	static
-../src/main.c:100:5:main	112	static
-../src/main.c:177:6:check_failed	16	static
+../src/main.c:34:6:SysTick_Handler	4	static
+../src/main.c:38:17:getTicks	4	static
+../src/main.c:42:13:init_ssp	40	static
+../src/main.c:77:5:I2CRead	72	static
+../src/main.c:95:6:lm75_read	16	static
+../src/main.c:101:5:main	136	static
+../src/main.c:163:6:check_failed	16	static

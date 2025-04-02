@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Create method oled_start" description="Extract Method Refactoring" fileName="file:/C:/Users/student/Desktop/basic/lpc17xx_xpr_bb_140609(1)/oled_periph/src/main.c" flags="4" id="org.eclipse.cdt.internal.ui.refactoring.extractfunction.ExtractFunctionRefactoring" name="oled_start" replaceDuplicates="false" selection="2751,140" stamp="1743605414525" visibility="public"/>
+</session>

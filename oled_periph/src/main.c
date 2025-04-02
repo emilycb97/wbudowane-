@@ -24,6 +24,7 @@
 
 #include "./myRtc.h"
 #include "./ledStrips.h"
+#include "screenManagment.h"
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
@@ -126,11 +127,7 @@ int main(void) {
 
 	pca9532_init();
 
-	oled_init();
-	oled_clearScreen(OLED_COLOR_WHITE);
-	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
-			OLED_COLOR_WHITE);
-
+	oled_start();
 	temp_init(&getTicks);
 
 	if (SysTick_Config(SystemCoreClock / 1000)) {
@@ -141,31 +138,20 @@ int main(void) {
 	int32_t temperature = 0;
 	uint8_t bufTemp[2] = { 0 };
 	RTC_TIME_Type time;
-	lm75_read(bufTemp);
+
 	while (1) {
 
 		/*get temperature multiplied by 10 */
 		temperature = temp_read();
-
-		/* output values to OLED display */
-		sprintf(buf, "%02d.%d C", temperature / 10, temperature % 10);
-		oled_putString((1 + 9 * 6), 1, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+		lm75_read(bufTemp);
 
 		rtc_get_time(&time);
 
-		sprintf(buf, "%02d:%02d:%02d", time.HOUR, time.MIN, time.SEC);
-		oled_putString(1, 10, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
+		oled_show_temp1(temperature, buf);
+		oled_show_temp2(bufTemp, buf);
+		oled_show_timer(time2, buf);
+		oled_show_clock(time, buf);
 
-		sprintf(buf, "%02d/%02d/%04d", time.DOM, time.MONTH, time.YEAR);
-		oled_putString(1, 19, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
-
-		oled_putString(1, 28, (uint8_t*) "Timer   : ", OLED_COLOR_BLACK,
-				OLED_COLOR_WHITE);
-		sprintf(buf, "%02d:%02d:%02d", time2.HOUR, time2.MIN, time2.SEC);
-		oled_putString(1, 36, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
-
-		sprintf(buf, "%02d.%d C", bufTemp[0], bufTemp[1]);
-		oled_putString(1, 44, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 		manageLedStrips(&ledStrip);
 
 		/* delay */
