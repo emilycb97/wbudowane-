@@ -17241,3 +17241,87 @@ arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.ax
    text	   data	    bss	    dec	    hex	filename
   42568	   1712	   1288	  45568	   b200	oled_periph.axf
  
+17:39:21 **** Clean-only build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 clean 
+rm -rf ./src/core_cm3.d ./src/core_cm3.o ./src/system_LPC17xx.d ./src/system_LPC17xx.o
+rm -rf libCMSISv1p30_LPC17xx.a
+ 
+17:39:22 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r -j16 clean 
+rm -rf ./src/lpc17xx_adc.d ./src/lpc17xx_adc.o ./src/lpc17xx_can.d ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.d ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.d ./src/lpc17xx_dac.o ./src/lpc17xx_emac.d ./src/lpc17xx_emac.o ./src/lpc17xx_exti.d ./src/lpc17xx_exti.o ./src/lpc17xx_gpdma.d ./src/lpc17xx_gpdma.o ./src/lpc17xx_gpio.d ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.d ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.d ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.d ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.d ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.d ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.d ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.d ./src/lpc17xx_qei.o ./src/lpc17xx_rit.d ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.d ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.d ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.d ./src/lpc17xx_ssp.o ./src/lpc17xx_systick.d ./src/lpc17xx_systick.o ./src/lpc17xx_timer.d ./src/lpc17xx_timer.o ./src/lpc17xx_uart.d ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.d ./src/lpc17xx_wdt.o
+rm -rf libLib_MCU.a
+ 
+17:39:22 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 clean 
+rm -rf ./src/acc.d ./src/acc.o ./src/eeprom.d ./src/eeprom.o ./src/flash.d ./src/flash.o ./src/font5x7.d ./src/font5x7.o ./src/joystick.d ./src/joystick.o ./src/led7seg.d ./src/led7seg.o ./src/light.d ./src/light.o ./src/oled.d ./src/oled.o ./src/pca9532.d ./src/pca9532.o ./src/rgb.d ./src/rgb.o ./src/rotary.d ./src/rotary.o ./src/temp.d ./src/temp.o ./src/uart2.d ./src/uart2.o
+rm -rf libLib_EaBaseBoard.a
+ 
+17:39:22 **** Clean-only build of configuration Debug for project oled_periph ****
+make -r -j16 clean 
+rm -rf ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/screenManagment.d ./src/screenManagment.o
+rm -rf oled_periph.axf
+rm: can't remove 'oled_periph.axf': Permission denied
+make: [makefile:50: clean] Error 1 (ignored)
+ 
+17:39:25 **** Clean-only build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 clean 
+rm -rf ./src/core_cm3.d ./src/core_cm3.o ./src/system_LPC17xx.d ./src/system_LPC17xx.o
+rm -rf libCMSISv1p30_LPC17xx.a
+ 
+17:39:26 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r -j16 clean 
+rm -rf ./src/lpc17xx_adc.d ./src/lpc17xx_adc.o ./src/lpc17xx_can.d ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.d ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.d ./src/lpc17xx_dac.o ./src/lpc17xx_emac.d ./src/lpc17xx_emac.o ./src/lpc17xx_exti.d ./src/lpc17xx_exti.o ./src/lpc17xx_gpdma.d ./src/lpc17xx_gpdma.o ./src/lpc17xx_gpio.d ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.d ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.d ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.d ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.d ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.d ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.d ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.d ./src/lpc17xx_qei.o ./src/lpc17xx_rit.d ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.d ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.d ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.d ./src/lpc17xx_ssp.o ./src/lpc17xx_systick.d ./src/lpc17xx_systick.o ./src/lpc17xx_timer.d ./src/lpc17xx_timer.o ./src/lpc17xx_uart.d ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.d ./src/lpc17xx_wdt.o
+rm -rf libLib_MCU.a
+ 
+17:39:26 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 clean 
+rm -rf ./src/acc.d ./src/acc.o ./src/eeprom.d ./src/eeprom.o ./src/flash.d ./src/flash.o ./src/font5x7.d ./src/font5x7.o ./src/joystick.d ./src/joystick.o ./src/led7seg.d ./src/led7seg.o ./src/light.d ./src/light.o ./src/oled.d ./src/oled.o ./src/pca9532.d ./src/pca9532.o ./src/rgb.d ./src/rgb.o ./src/rotary.d ./src/rotary.o ./src/temp.d ./src/temp.o ./src/uart2.d ./src/uart2.o
+rm -rf libLib_EaBaseBoard.a
+ 
+17:39:26 **** Clean-only build of configuration Debug for project oled_periph ****
+make -r -j16 clean 
+rm -rf ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/screenManagment.d ./src/screenManagment.o
+rm -rf oled_periph.axf
+rm: can't remove 'oled_periph.axf': Permission denied
+make: [makefile:50: clean] Error 1 (ignored)
+ 
+17:39:34 **** Clean-only build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 clean 
+rm -rf ./src/core_cm3.d ./src/core_cm3.o ./src/system_LPC17xx.d ./src/system_LPC17xx.o
+rm -rf libCMSISv1p30_LPC17xx.a
+ 
+17:39:34 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r -j16 clean 
+rm -rf ./src/lpc17xx_adc.d ./src/lpc17xx_adc.o ./src/lpc17xx_can.d ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.d ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.d ./src/lpc17xx_dac.o ./src/lpc17xx_emac.d ./src/lpc17xx_emac.o ./src/lpc17xx_exti.d ./src/lpc17xx_exti.o ./src/lpc17xx_gpdma.d ./src/lpc17xx_gpdma.o ./src/lpc17xx_gpio.d ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.d ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.d ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.d ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.d ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.d ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.d ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.d ./src/lpc17xx_qei.o ./src/lpc17xx_rit.d ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.d ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.d ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.d ./src/lpc17xx_ssp.o ./src/lpc17xx_systick.d ./src/lpc17xx_systick.o ./src/lpc17xx_timer.d ./src/lpc17xx_timer.o ./src/lpc17xx_uart.d ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.d ./src/lpc17xx_wdt.o
+rm -rf libLib_MCU.a
+ 
+17:39:34 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 clean 
+rm -rf ./src/acc.d ./src/acc.o ./src/eeprom.d ./src/eeprom.o ./src/flash.d ./src/flash.o ./src/font5x7.d ./src/font5x7.o ./src/joystick.d ./src/joystick.o ./src/led7seg.d ./src/led7seg.o ./src/light.d ./src/light.o ./src/oled.d ./src/oled.o ./src/pca9532.d ./src/pca9532.o ./src/rgb.d ./src/rgb.o ./src/rotary.d ./src/rotary.o ./src/temp.d ./src/temp.o ./src/uart2.d ./src/uart2.o
+rm -rf libLib_EaBaseBoard.a
+ 
+17:39:34 **** Clean-only build of configuration Debug for project oled_periph ****
+make -r -j16 clean 
+rm -rf ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/screenManagment.d ./src/screenManagment.o
+rm -rf oled_periph.axf
+ 
+17:39:43 **** Clean-only build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+make -r -j16 clean 
+rm -rf ./src/core_cm3.d ./src/core_cm3.o ./src/system_LPC17xx.d ./src/system_LPC17xx.o
+rm -rf libCMSISv1p30_LPC17xx.a
+ 
+17:39:43 **** Clean-only build of configuration Debug for project Lib_MCU ****
+make -r -j16 clean 
+rm -rf ./src/lpc17xx_adc.d ./src/lpc17xx_adc.o ./src/lpc17xx_can.d ./src/lpc17xx_can.o ./src/lpc17xx_clkpwr.d ./src/lpc17xx_clkpwr.o ./src/lpc17xx_dac.d ./src/lpc17xx_dac.o ./src/lpc17xx_emac.d ./src/lpc17xx_emac.o ./src/lpc17xx_exti.d ./src/lpc17xx_exti.o ./src/lpc17xx_gpdma.d ./src/lpc17xx_gpdma.o ./src/lpc17xx_gpio.d ./src/lpc17xx_gpio.o ./src/lpc17xx_i2c.d ./src/lpc17xx_i2c.o ./src/lpc17xx_i2s.d ./src/lpc17xx_i2s.o ./src/lpc17xx_libcfg_default.d ./src/lpc17xx_libcfg_default.o ./src/lpc17xx_mcpwm.d ./src/lpc17xx_mcpwm.o ./src/lpc17xx_nvic.d ./src/lpc17xx_nvic.o ./src/lpc17xx_pinsel.d ./src/lpc17xx_pinsel.o ./src/lpc17xx_pwm.d ./src/lpc17xx_pwm.o ./src/lpc17xx_qei.d ./src/lpc17xx_qei.o ./src/lpc17xx_rit.d ./src/lpc17xx_rit.o ./src/lpc17xx_rtc.d ./src/lpc17xx_rtc.o ./src/lpc17xx_spi.d ./src/lpc17xx_spi.o ./src/lpc17xx_ssp.d ./src/lpc17xx_ssp.o ./src/lpc17xx_systick.d ./src/lpc17xx_systick.o ./src/lpc17xx_timer.d ./src/lpc17xx_timer.o ./src/lpc17xx_uart.d ./src/lpc17xx_uart.o ./src/lpc17xx_wdt.d ./src/lpc17xx_wdt.o
+rm -rf libLib_MCU.a
+ 
+17:39:43 **** Clean-only build of configuration Debug for project Lib_EaBaseBoard ****
+make -r -j16 clean 
+rm -rf ./src/acc.d ./src/acc.o ./src/eeprom.d ./src/eeprom.o ./src/flash.d ./src/flash.o ./src/font5x7.d ./src/font5x7.o ./src/joystick.d ./src/joystick.o ./src/led7seg.d ./src/led7seg.o ./src/light.d ./src/light.o ./src/oled.d ./src/oled.o ./src/pca9532.d ./src/pca9532.o ./src/rgb.d ./src/rgb.o ./src/rotary.d ./src/rotary.o ./src/temp.d ./src/temp.o ./src/uart2.d ./src/uart2.o
+rm -rf libLib_EaBaseBoard.a
+ 
+17:39:43 **** Clean-only build of configuration Debug for project oled_periph ****
+make -r -j16 clean 
+rm -rf ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/screenManagment.d ./src/screenManagment.o
+rm -rf oled_periph.axf
+ 
