@@ -90,7 +90,15 @@ int main(void) {
 	rtc_init();
 	rtc_set_time();
 	PINSEL_CFG_Type PinCfg;
-
+	PinCfg.Funcnum = 2;
+		PinCfg.Pinnum = 10;
+		PinCfg.Portnum = 0;
+		PINSEL_ConfigPin(&PinCfg);
+		PinCfg.Pinnum = 11;
+		PINSEL_ConfigPin(&PinCfg);
+	I2C_Init(LPC_I2C2, 100000);
+		I2C_Cmd(LPC_I2C2, ENABLE);
+		pca9532_init();
 	oled_init();
 
 	temp_init(&getTicks);
@@ -108,18 +116,12 @@ int main(void) {
 	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
 			OLED_COLOR_WHITE);
 
-	PinCfg.Funcnum = 2;
-	PinCfg.Pinnum = 10;
-	PinCfg.Portnum = 0;
-	PINSEL_ConfigPin(&PinCfg);
-	PinCfg.Pinnum = 11;
-	PINSEL_ConfigPin(&PinCfg);
+
 	// Initialize I2C peripheral
-	I2C_Init(LPC_I2C2, 100000);
+
 
 	/* Enable I2C1 operation */
-	I2C_Cmd(LPC_I2C2, ENABLE);
-	pca9532_init();
+
 
 	while (1) {
 

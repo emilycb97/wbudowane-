@@ -5,7 +5,7 @@
  * Generated linker script file for LPC1769
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.30
- * MCUXpresso IDE v11.9.1 [Build 2170] [2024-04-19] on 24 mar 2025, 13:43:48
+ * MCUXpresso IDE v11.9.1 [Build 2170] [2024-04-19] on 2 kwi 2025, 15:16:57
  */
 
 INCLUDE "oled_periph_Debug_library.ld"
