@@ -22,7 +22,7 @@
 #include "pca9532.h"
 
 #include "./myRtc.h"
-
+#include "./ledStrips.h"
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
@@ -70,15 +70,7 @@ static void init_ssp(void) {
 	SSP_Cmd(LPC_SSP1, ENABLE);
 }
 
-typedef struct{
-	uint8_t dir;
-	uint32_t cnt;
-	uint16_t ledOn;
-	uint16_t ledOff;
-}LED_STRIP_CONF;
 
-
-void manageLedStrips(LED_STRIP_CONF *strip);
 int main(void) {
 	LED_STRIP_CONF ledStrip;
 	ledStrip.dir = 0;
@@ -148,31 +140,7 @@ int main(void) {
 		oled_putString(1, 36, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
 		manageLedStrips(&ledStrip);
-		/*
-		if (cnt < 16)
-			ledOn |= (1 << cnt);
-		if (cnt > 15)
-			ledOn &= ~(1 << (cnt - 16));
 
-		if (cnt > 15)
-			ledOff |= (1 << (cnt - 16));
-		if (cnt < 16)
-			ledOff &= ~(1 << cnt);
-
-		pca9532_setLeds(ledOn, ledOff);
-
-		if (dir) {
-			if (cnt == 0)
-				cnt = 31;
-			else
-				cnt--;
-
-		} else {
-			cnt++;
-			if (cnt >= 32)
-				cnt = 0;
-		}
-		*/
 		/* delay */
 		Timer0_Wait(200);
 	}
@@ -180,31 +148,7 @@ int main(void) {
 }
 
 
-void manageLedStrips(LED_STRIP_CONF *strip) {
-	if (strip->cnt < 16)
-		strip->ledOn |= (1 << strip->cnt);
-			if (strip->cnt > 15)
-				strip->ledOn &= ~(1 << (strip->cnt - 16));
 
-			if (strip->cnt > 15)
-				strip->ledOff |= (1 << (strip->cnt - 16));
-			if (strip->cnt < 16)
-				strip->ledOff &= ~(1 << strip->cnt);
-
-			pca9532_setLeds(strip->ledOn, strip->ledOff);
-
-			if (strip->dir) {
-				if (strip->cnt == 0)
-					strip->cnt = 31;
-				else
-					strip->cnt--;
-
-			} else {
-				strip->cnt++;
-				if (strip->cnt >= 32)
-					strip->cnt = 0;
-			}
-}
 
 void check_failed(uint8_t *file, uint32_t line) {
 	/* User can add his own implementation to report the file name and line number,
