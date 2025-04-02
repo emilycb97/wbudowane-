@@ -75,7 +75,6 @@ int main(void) {
 	uint16_t ledOn = 0;
 	uint16_t ledOff = 0;
 	uint8_t dir = 0;
-	uint8_t joy = 0;
 	RTC_TIME_Type time2;
 	time2.SEC = 0;
 	time2.MIN = 00;
@@ -98,6 +97,11 @@ int main(void) {
 	pca9532_init();
 
 	oled_init();
+	light_enable();
+	light_setRange(LIGHT_RANGE_4000);
+	oled_clearScreen(OLED_COLOR_WHITE);
+	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
+			OLED_COLOR_WHITE);
 
 	temp_init(&getTicks);
 
@@ -106,13 +110,6 @@ int main(void) {
 			;  // Capture error
 	}
 
-	light_enable();
-	light_setRange(LIGHT_RANGE_4000);
-
-	oled_clearScreen(OLED_COLOR_WHITE);
-
-	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
-			OLED_COLOR_WHITE);
 
 	// Initialize I2C peripheral
 
@@ -139,29 +136,6 @@ int main(void) {
 				OLED_COLOR_WHITE);
 		sprintf(buf, "%02d:%02d:%02d", time2.HOUR, time2.MIN, time2.SEC);
 		oled_putString(1, 36, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
-		/* dont work
-		 joy = joystick_read();
-
-		 if ((joy & JOYSTICK_CENTER) != 0) {
-		 continue;
-		 }
-
-		 if ((joy & JOYSTICK_DOWN) != 0) {
-
-		 }
-
-		 if (joy == JOYSTICK_UP) {
-		 time2.HOUR = 1;
-		 }
-
-		 if ((joy & JOYSTICK_LEFT) != 0) {
-
-		 }
-
-		 if ((joy & JOYSTICK_RIGHT) != 0) {
-
-		 }
-		 */
 
 		if (cnt < 16)
 			ledOn |= (1 << cnt);
