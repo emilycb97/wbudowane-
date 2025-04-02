@@ -28,8 +28,13 @@
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
+
+//lm75 stuff
 #define I2CDEV LPC_I2C2
 #define LM75_I2C_ADDR (0x4D)
+
+//barometer stuff
+#define BMP180_I2C_ID_ADDR (0x77)
 
 void SysTick_Handler(void) {
 	msTicks++;
@@ -92,10 +97,33 @@ int I2CRead(uint8_t addr, uint8_t *buf, uint32_t len) {
 	}
 }
 
+int I2CWrite(uint8_t addr, uint8_t* buf, uint32_t len)
+{
+	I2C_M_SETUP_Type txsetup;
+
+	txsetup.sl_addr7bit = addr;
+	txsetup.tx_data = buf;
+	txsetup.tx_length = len;
+	txsetup.rx_data = NULL;
+	txsetup.rx_length = 0;
+	txsetup.retransmissions_max = 3;
+
+	if (I2C_MasterTransferData(I2CDEV, &txsetup, I2C_TRANSFER_POLLING) == SUCCESS){
+		return (0);
+	} else {
+		return (-1);
+	}
+}
 void lm75_read(uint8_t *buf) {
 	buf[0] = 0;
 	buf[1] = 0;
 	I2CRead(LM75_I2C_ADDR, buf, 2);
+}
+
+void barometer_readID(uint8_t *buf) {
+	buf[0] = 0xD0;// rejestr ID
+	I2CWrite(BMP180_I2C_ID_ADDR, buf, 1);
+	I2CRead(BMP180_I2C_ID_ADDR, buf, 1);
 }
 
 int main(void) {
@@ -152,6 +180,9 @@ int main(void) {
 		oled_show_timer(time2, buf);
 		oled_show_clock(time, buf);
 
+		barometer_readID(buf);
+		sprintf(buf, "%d",buf);
+		oled_putString(1, 52, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 		manageLedStrips(&ledStrip);
 
 		/* delay */

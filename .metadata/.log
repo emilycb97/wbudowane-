@@ -580,3 +580,35 @@ java.lang.NullPointerException: Cannot read the array length because "containers
 
 !ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 17:17:50.313
 !MESSAGE Telnet session connected on port 3330->29606 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2025-04-02 17:26:33.942
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 17:26:34.947
+!MESSAGE RedlinkServer telnet session connected on port 3025->29809 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 17:26:39.011
+!MESSAGE cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.w3.org/2001/XInclude":include}'. One of '{include, parameters, script}' is expected.
+
+
+!ENTRY com.crt.log 1 0 2025-04-02 17:26:39.359
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.5.30/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=29811, -g, -mi, -2, -pLPC1769, -vendor=NXP, --reset=VECTRESET, -ProbeHandle=1, -CoreIndex=0, --flash-hashing, --flash-driver, LPC175x_6x_512.cfx, -x, C:/nxp/MCUXpressoIDE_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.bin.win32_11.9.1.202402080819/binaries/, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 17:26:42.027
+!MESSAGE Telnet session connected on port 3330->29824 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2025-04-02 17:35:02.005
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 17:35:03.010
+!MESSAGE RedlinkServer telnet session connected on port 3025->30000 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-04-02 17:35:36.732
+!MESSAGE cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.w3.org/2001/XInclude":include}'. One of '{include, parameters, script}' is expected.
+
+
+!ENTRY com.crt.log 1 0 2025-04-02 17:35:37.091
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.5.30/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=30009, -g, -mi, -2, -pLPC1769, -vendor=NXP, --reset=VECTRESET, -ProbeHandle=1, -CoreIndex=0, --flash-hashing, --flash-driver, LPC175x_6x_512.cfx, -x, C:/nxp/MCUXpressoIDE_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.bin.win32_11.9.1.202402080819/binaries/, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-04-02 17:35:39.731
+!MESSAGE Telnet session connected on port 3330->30023 @ 127.0.0.1
