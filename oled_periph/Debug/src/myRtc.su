@@ -1,3 +1,3 @@
 ../src/myRtc.c:3:6:rtc_init	8	static
-../src/myRtc.c:9:6:rtc_set_time	40	static
-../src/myRtc.c:23:6:rtc_get_time	16	static
+../src/myRtc.c:8:6:rtc_set_time	40	static
+../src/myRtc.c:21:6:rtc_get_time	16	static

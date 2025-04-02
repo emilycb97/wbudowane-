@@ -15,7 +15,7 @@ src/main.o src/main.d: ../src/main.c \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/acc.h \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/joystick.h \
  C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/pca9532.h \
- ../src/./myRtc.h ../src/./JoystickHandler.h
+ ../src/./myRtc.h ../src/./ledStrips.h
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc/lpc17xx_pinsel.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc/LPC17xx.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:
@@ -33,4 +33,4 @@ C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/acc.
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/joystick.h:
 C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc/pca9532.h:
 ../src/./myRtc.h:
-../src/./JoystickHandler.h:
+../src/./ledStrips.h:

@@ -1,4 +1,4 @@
-15:16:55 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+16:14:24 **** Build of configuration Debug for project Lib_EaBaseBoard ****
 make -r -j16 all 
 Building file: ../src/acc.c
 Building file: ../src/eeprom.c
@@ -20,50 +20,50 @@ Building file: ../src/light.c
 Building file: ../src/oled.c
 Invoking: MCU C Compiler
 Invoking: MCU C Compiler
-Building file: ../src/pca9532.c
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/led7seg.d" -MT"src/led7seg.o" -MT"src/led7seg.d" -o "src/led7seg.o" "../src/led7seg.c"
-Invoking: MCU C Compiler
+Building file: ../src/pca9532.c
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/light.d" -MT"src/light.o" -MT"src/light.d" -o "src/light.o" "../src/light.c"
-Building file: ../src/rgb.c
+Invoking: MCU C Compiler
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/oled.d" -MT"src/oled.o" -MT"src/oled.d" -o "src/oled.o" "../src/oled.c"
+Building file: ../src/rgb.c
 Invoking: MCU C Compiler
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/pca9532.d" -MT"src/pca9532.o" -MT"src/pca9532.d" -o "src/pca9532.o" "../src/pca9532.c"
 Invoking: MCU C Compiler
 Building file: ../src/rotary.c
-Building file: ../src/temp.c
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/rgb.d" -MT"src/rgb.o" -MT"src/rgb.d" -o "src/rgb.o" "../src/rgb.c"
+Building file: ../src/temp.c
 Building file: ../src/uart2.c
 Invoking: MCU C Compiler
-Invoking: MCU C Compiler
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/rotary.d" -MT"src/rotary.o" -MT"src/rotary.d" -o "src/rotary.o" "../src/rotary.c"
+Invoking: MCU C Compiler
 Invoking: MCU C Compiler
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/temp.d" -MT"src/temp.o" -MT"src/temp.d" -o "src/temp.o" "../src/temp.c"
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/uart2.d" -MT"src/uart2.o" -MT"src/uart2.d" -o "src/uart2.o" "../src/uart2.c"
 Finished building: ../src/font5x7.c
+ 
+Finished building: ../src/eeprom.c
+Finished building: ../src/joystick.c
 Finished building: ../src/acc.c
  
  
 Finished building: ../src/flash.c
-Finished building: ../src/joystick.c
- 
- 
-Finished building: ../src/eeprom.c
-Finished building: ../src/led7seg.c
+Finished building: ../src/rotary.c
  
 Finished building: ../src/rgb.c
+ 
+ 
+Finished building: ../src/led7seg.c
+ 
 Finished building: ../src/light.c
+Finished building: ../src/uart2.c
 Finished building: ../src/oled.c
  
-Finished building: ../src/rotary.c
 Finished building: ../src/pca9532.c
+ 
+ 
 Finished building: ../src/temp.c
  
  
- 
- 
- 
- 
-Finished building: ../src/uart2.c
  
 Building target: libLib_EaBaseBoard.a
 Invoking: MCU Archiver
@@ -89,5 +89,5 @@ arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_E
     840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
  
 
-15:16:56 Build Finished. 0 errors, 0 warnings. (took 784ms)
+16:14:25 Build Finished. 0 errors, 0 warnings. (took 726ms)
 

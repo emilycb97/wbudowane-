@@ -1,10 +1,10 @@
-15:16:54 **** Incremental Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
+16:14:22 **** Build of configuration Debug for project Lib_CMSISv1p30_LPC17xx ****
 make -r -j16 all 
 Building file: ../src/core_cm3.c
 Building file: ../src/system_LPC17xx.c
 Invoking: MCU C Compiler
-Invoking: MCU C Compiler
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/core_cm3.d" -MT"src/core_cm3.o" -MT"src/core_cm3.d" -o "src/core_cm3.o" "../src/core_cm3.c"
+Invoking: MCU C Compiler
 arm-none-eabi-gcc -DDEBUG -D__CODE_RED -D__REDLIB__ -I"C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="../src/"= -mcpu=cortex-m3 -mthumb -D__REDLIB__ -fstack-usage -specs=redlib.specs -MMD -MP -MF"src/system_LPC17xx.d" -MT"src/system_LPC17xx.o" -MT"src/system_LPC17xx.d" -o "src/system_LPC17xx.o" "../src/system_LPC17xx.c"
 Finished building: ../src/core_cm3.c
 Finished building: ../src/system_LPC17xx.c
@@ -23,5 +23,5 @@ arm-none-eabi-size libCMSISv1p30_LPC17xx.a ; # arm-none-eabi-objdump -h -S libCM
    1064	      4	      0	   1068	    42c	system_LPC17xx.o (ex libCMSISv1p30_LPC17xx.a)
  
 
-15:16:54 Build Finished. 0 errors, 0 warnings. (took 358ms)
+16:14:23 Build Finished. 0 errors, 0 warnings. (took 363ms)
 
