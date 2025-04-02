@@ -127,6 +127,8 @@ int main(void) {
 	pca9532_init();
 
 	oled_init();
+	//light_enable();
+	//light_setRange(LIGHT_RANGE_4000);
 	oled_clearScreen(OLED_COLOR_WHITE);
 	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
 			OLED_COLOR_WHITE);

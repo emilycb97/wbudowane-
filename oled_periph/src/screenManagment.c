@@ -1,0 +1,8 @@
+/*
+ * screenManagment.c
+ *
+ *  Created on: 2 kwi 2025
+ *      Author: student
+ */
+
+

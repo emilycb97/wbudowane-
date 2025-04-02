@@ -5,5 +5,5 @@ C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\i
 ../src/main.c:41:13:init_ssp	40	static
 ../src/main.c:76:5:I2CRead	72	static
 ../src/main.c:94:6:lm75_read	16	static
-../src/main.c:102:5:main	112	static
-../src/main.c:184:6:check_failed	16	static
+../src/main.c:100:5:main	112	static
+../src/main.c:177:6:check_failed	16	static

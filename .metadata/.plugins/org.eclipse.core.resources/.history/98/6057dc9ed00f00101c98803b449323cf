@@ -73,7 +73,8 @@ static void init_ssp(void) {
 	SSP_Cmd(LPC_SSP1, ENABLE);
 }
 
-int I2CRead(uint8_t addr, uint8_t *buf, uint32_t len) {
+int I2CRead(uint8_t addr, uint8_t* buf, uint32_t len)
+{
 	I2C_M_SETUP_Type rxsetup;
 
 	rxsetup.sl_addr7bit = addr;
@@ -83,19 +84,20 @@ int I2CRead(uint8_t addr, uint8_t *buf, uint32_t len) {
 	rxsetup.rx_length = len;
 	rxsetup.retransmissions_max = 3;
 
-	if (I2C_MasterTransferData(I2CDEV, &rxsetup, I2C_TRANSFER_POLLING)
-			== SUCCESS) {
+	if (I2C_MasterTransferData(I2CDEV, &rxsetup, I2C_TRANSFER_POLLING) == SUCCESS){
 		return (0);
 	} else {
 		return (-1);
 	}
 }
 
-void lm75_read(uint8_t *buf) {
-	buf[0] = 0;
-	buf[1] = 0;
-	I2CRead(LM75_I2C_ADDR, buf, 2);
+void lm75_read (uint8_t *buf) {
+    buf[0] = 0;
+    buf[1] = 0;
+    I2CRead(LM75_I2C_ADDR, buf, 2);
 }
+
+
 
 int main(void) {
 	LED_STRIP_CONF ledStrip;
@@ -103,6 +105,7 @@ int main(void) {
 	ledStrip.cnt = 0;
 	ledStrip.ledOn = 0;
 	ledStrip.ledOff = 0;
+
 
 	RTC_TIME_Type time2;
 	time2.SEC = 0;
@@ -127,6 +130,8 @@ int main(void) {
 	pca9532_init();
 
 	oled_init();
+	light_enable();
+	light_setRange(LIGHT_RANGE_4000);
 	oled_clearScreen(OLED_COLOR_WHITE);
 	oled_putString(1, 1, (uint8_t*) "Temp   : ", OLED_COLOR_BLACK,
 			OLED_COLOR_WHITE);
@@ -139,7 +144,7 @@ int main(void) {
 	}
 
 	int32_t temperature = 0;
-	uint8_t bufTemp[2] = { 0 };
+	uint8_t bufTemp[2] = {0};
 	RTC_TIME_Type time;
 	lm75_read(bufTemp);
 	while (1) {
@@ -173,6 +178,9 @@ int main(void) {
 	}
 
 }
+
+
+
 
 void check_failed(uint8_t *file, uint32_t line) {
 	/* User can add his own implementation to report the file name and line number,

@@ -1,4 +1,4 @@
-16:38:26 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
+16:48:40 **** Incremental Build of configuration Debug for project Lib_EaBaseBoard ****
 make -r -j16 all 
 make[1]: Nothing to be done for 'main-build'.
 Performing post-build steps
@@ -19,5 +19,5 @@ arm-none-eabi-size libLib_EaBaseBoard.a ; # arm-none-eabi-objdump -h -S libLib_E
     840	      0	      1	    841	    349	uart2.o (ex libLib_EaBaseBoard.a)
  
 
-16:38:27 Build Finished. 0 errors, 0 warnings. (took 199ms)
+16:48:40 Build Finished. 0 errors, 0 warnings. (took 203ms)
 
