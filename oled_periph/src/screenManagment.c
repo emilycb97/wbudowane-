@@ -33,3 +33,4 @@ void oled_show_clock(RTC_TIME_Type time, uint8_t* buf){
 	oled_putString(1, 19, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 
 }
+

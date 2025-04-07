@@ -1,4 +1,4 @@
-C:\Users\student\Desktop\basic\lpc17xx_xpr_bb_140609(1)\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:1211:22:__WFI	4	static
+C:\Users\student\Desktop\roboczy\wbudowane-\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:1211:22:__WFI	4	static
 ../src/lpc17xx_clkpwr.c:80:6:CLKPWR_SetPCLKDiv	24	static
 ../src/lpc17xx_clkpwr.c:141:10:CLKPWR_GetPCLKSEL	24	static
 ../src/lpc17xx_clkpwr.c:196:10:CLKPWR_GetPCLK	24	static

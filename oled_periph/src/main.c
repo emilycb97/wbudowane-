@@ -127,6 +127,13 @@ void barometer_readID(uint8_t *buf) {
 }
 
 int main(void) {
+	//
+	int value = 0;
+    uint8_t joy = 0;
+
+    joystick_init();
+	//
+
 	LED_STRIP_CONF ledStrip;
 	ledStrip.dir = 0;
 	ledStrip.cnt = 0;
@@ -139,7 +146,7 @@ int main(void) {
 	time2.HOUR = 00;
 
 	init_ssp();
-	joystick_init();
+	//joystick_init();
 	rtc_init();
 	rtc_set_time();
 
@@ -163,11 +170,41 @@ int main(void) {
 			;  // Capture error
 	}
 
+
 	int32_t temperature = 0;
 	uint8_t bufTemp[2] = { 0 };
 	RTC_TIME_Type time;
 	uint8_t barId;
 	while (1) {
+
+		//
+
+			 joy = joystick_read();
+
+			        if ((joy & JOYSTICK_CENTER) != 0) {
+
+			        }
+
+			        if ((joy & JOYSTICK_DOWN) != 0) {
+
+			        }
+
+			        if ((joy & JOYSTICK_LEFT) != 0) {
+			        	time2.MIN--;
+
+			        }
+
+			        if ((joy & JOYSTICK_UP) != 0) {
+			        	time2.SEC=1;
+			        }
+
+			        if ((joy & JOYSTICK_RIGHT) != 0) {
+			        	time2.MIN++;
+
+			        }
+
+
+			//
 
 		/*get temperature multiplied by 10 */
 		temperature = temp_read();
