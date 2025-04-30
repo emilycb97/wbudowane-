@@ -26,18 +26,7 @@ void timer_init(LPC_TIM_TypeDef *TIMx) {
 	matchCfg.MatchValue = 1000; // 1000 ms = 1 second
 
 	TIM_ConfigMatch(TIMx, &matchCfg);
-/*
-	// Enable timer interrupt in NVIC
-	if (TIMx == LPC_TIM0) {
-		NVIC_EnableIRQ(TIMER0_IRQn);
-	} else if (TIMx == LPC_TIM1) {
-		NVIC_EnableIRQ(TIMER1_IRQn);
-	} else if (TIMx == LPC_TIM2) {
-		NVIC_EnableIRQ(TIMER2_IRQn);
-	} else if (TIMx == LPC_TIM3) {
-		NVIC_EnableIRQ(TIMER3_IRQn);
-	}
-*/
+
 	// Start timer
 	TIM_Cmd(TIMx, ENABLE);
 }
