@@ -19,3 +19,6 @@ na ekranie wypisuje temperaturę
 9. i2c i/f do lm75
 10. barometr przez i2c
 11. światełka
+
+TODO
+timer zacznij od TIM_INIT() 
