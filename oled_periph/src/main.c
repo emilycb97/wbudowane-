@@ -179,10 +179,7 @@ int main(void) {
 
 	//LED STRIP CONFIG
 	LED_STRIP_CONF ledStrip;
-	ledStrip.dir = 0;
-	ledStrip.cnt = 0;
-	ledStrip.ledOn = 0;
-	ledStrip.ledOff = 0;
+	ledStripInit(&ledStrip);
 	pca9532_init();
 
 	oled_start();

@@ -4,25 +4,32 @@
 void manageLedStrips(LED_STRIP_CONF *strip) {
 	if (strip->cnt < 16)
 		strip->ledOn |= (1 << strip->cnt);
-			if (strip->cnt > 15)
-				strip->ledOn &= ~(1 << (strip->cnt - 16));
+	if (strip->cnt > 15)
+		strip->ledOn &= ~(1 << (strip->cnt - 16));
 
-			if (strip->cnt > 15)
-				strip->ledOff |= (1 << (strip->cnt - 16));
-			if (strip->cnt < 16)
-				strip->ledOff &= ~(1 << strip->cnt);
+	if (strip->cnt > 15)
+		strip->ledOff |= (1 << (strip->cnt - 16));
+	if (strip->cnt < 16)
+		strip->ledOff &= ~(1 << strip->cnt);
 
-			pca9532_setLeds(strip->ledOn, strip->ledOff);
+	pca9532_setLeds(strip->ledOn, strip->ledOff);
 
-			if (strip->dir) {
-				if (strip->cnt == 0)
-					strip->cnt = 31;
-				else
-					strip->cnt--;
+	if (strip->dir) {
+		if (strip->cnt == 0)
+			strip->cnt = 31;
+		else
+			strip->cnt--;
 
-			} else {
-				strip->cnt++;
-				if (strip->cnt >= 32)
-					strip->cnt = 0;
-			}
+	} else {
+		strip->cnt++;
+		if (strip->cnt >= 32)
+			strip->cnt = 0;
+	}
+}
+
+void ledStripInit(LED_STRIP_CONF *ledStrip) {
+	ledStrip->dir = 0;
+	ledStrip->cnt = 0;
+	ledStrip->ledOn = 0;
+	ledStrip->ledOff = 0;
 }

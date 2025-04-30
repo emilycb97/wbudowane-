@@ -18,6 +18,6 @@ typedef struct{
 
 
 void manageLedStrips(LED_STRIP_CONF *strip);
-
+void ledStripInit(LED_STRIP_CONF *strip);
 
 #endif /* LEDSTRIPS_H_ */
