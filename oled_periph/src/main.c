@@ -25,6 +25,7 @@
 #include "./myRtc.h"
 #include "./ledStrips.h"
 #include "screenManagment.h"
+#include "./myTimer.h"
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
@@ -97,8 +98,7 @@ int I2CRead(uint8_t addr, uint8_t *buf, uint32_t len) {
 	}
 }
 
-int I2CWrite(uint8_t addr, uint8_t* buf, uint32_t len)
-{
+int I2CWrite(uint8_t addr, uint8_t *buf, uint32_t len) {
 	I2C_M_SETUP_Type txsetup;
 
 	txsetup.sl_addr7bit = addr;
@@ -108,7 +108,8 @@ int I2CWrite(uint8_t addr, uint8_t* buf, uint32_t len)
 	txsetup.rx_length = 0;
 	txsetup.retransmissions_max = 3;
 
-	if (I2C_MasterTransferData(I2CDEV, &txsetup, I2C_TRANSFER_POLLING) == SUCCESS){
+	if (I2C_MasterTransferData(I2CDEV, &txsetup, I2C_TRANSFER_POLLING)
+			== SUCCESS) {
 		return (0);
 	} else {
 		return (-1);
@@ -121,7 +122,7 @@ void lm75_read(uint8_t *buf) {
 }
 
 void barometer_readID(uint8_t *buf) {
-	buf[0] = 0xD0;// rejestr ID
+	buf[0] = 0xD0;	// rejestr ID
 	I2CWrite(BMP180_I2C_ADDR, buf, 1);
 	I2CRead(BMP180_I2C_ADDR, buf, 1);
 }
@@ -129,9 +130,9 @@ void barometer_readID(uint8_t *buf) {
 int main(void) {
 	//
 	int value = 0;
-    uint8_t joy = 0;
+	uint8_t joy = 0;
 
-    joystick_init();
+	joystick_init();
 	//
 
 	LED_STRIP_CONF ledStrip;
@@ -169,46 +170,47 @@ int main(void) {
 			;  // Capture error
 	}
 
-
 	int32_t temperature = 0;
 	uint8_t bufTemp[2] = { 0 };
 	RTC_TIME_Type time;
+	RTC_TIME_Type time2;
 	uint8_t barId;
 	bool timerOn = false;
+	timer_init(LPC_TIM1);
 	while (1) {
 
 		//
 
-			 joy = joystick_read();
+		joy = joystick_read();
 
-			        if ((joy & JOYSTICK_CENTER) != 0) {
+		if ((joy & JOYSTICK_CENTER) != 0) {
 
-			        }
+		}
 
-			        if ((joy & JOYSTICK_DOWN) != 0) {
+		if ((joy & JOYSTICK_DOWN) != 0) {
 
-			        }
+		}
 
-			        if ((joy & JOYSTICK_LEFT) != 0) {
-			        	time2.MIN--;
+		if ((joy & JOYSTICK_LEFT) != 0) {
+			time2.MIN--;
 
-			        }
+		}
 
-			        if ((joy & JOYSTICK_UP) != 0) {
-			        	time2.SEC=1;
-			        }
+		if ((joy & JOYSTICK_UP) != 0) {
+			timerOn = !timerOn;
+		}
 
-			        if ((joy & JOYSTICK_RIGHT) != 0) {
-			        	time2.MIN++;
+		if ((joy & JOYSTICK_RIGHT) != 0) {
+			time2.MIN++;
 
-			        }
+		}
 
-
-			//
+		//
 
 		/*get temperature multiplied by 10 */
 		temperature = temp_read();
 		lm75_read(bufTemp);
+		TIMER0_IRQHandler(LPC_TIM1, time2, timerOn);
 
 		rtc_get_time(&time);
 

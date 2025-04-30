@@ -42,8 +42,9 @@ void timer_init(LPC_TIM_TypeDef *TIMx) {
 	TIM_Cmd(TIMx, ENABLE);
 }
 
-void TIMER0_IRQHandler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type* time2) {
-    if (TIM_GetIntStatus(LPC_TIM0, TIM_MR0)) {
+void TIMER0_IRQHandler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type* time2, FunctionalState timerState) {
+    if(timerState == ENABLE) {
+	if (TIM_GetIntStatus(LPC_TIM0, TIM_MR0)) {
         TIM_ClearIntPending(LPC_TIM0, TIM_MR0);
 
         if (time2->SEC > 0 || time2->MIN > 0 || time2->HOUR > 0) {
@@ -60,6 +61,7 @@ void TIMER0_IRQHandler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type* time2) {
                 time2->SEC--;
             }
         }
+    }
     }
 }
 

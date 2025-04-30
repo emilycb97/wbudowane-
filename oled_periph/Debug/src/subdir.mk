@@ -8,6 +8,7 @@ C_SRCS += \
 ../src/ledStrips.c \
 ../src/main.c \
 ../src/myRtc.c \
+../src/myTimer.c \
 ../src/screenManagment.c 
 
 C_DEPS += \
@@ -15,6 +16,7 @@ C_DEPS += \
 ./src/ledStrips.d \
 ./src/main.d \
 ./src/myRtc.d \
+./src/myTimer.d \
 ./src/screenManagment.d 
 
 OBJS += \
@@ -22,6 +24,7 @@ OBJS += \
 ./src/ledStrips.o \
 ./src/main.o \
 ./src/myRtc.o \
+./src/myTimer.o \
 ./src/screenManagment.o 
 
 
@@ -37,7 +40,7 @@ src/%.o: ../src/%.c src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/screenManagment.d ./src/screenManagment.o
+	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/myTimer.d ./src/myTimer.o ./src/screenManagment.d ./src/screenManagment.o
 
 .PHONY: clean-src
 
