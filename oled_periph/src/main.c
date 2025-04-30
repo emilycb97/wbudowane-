@@ -21,7 +21,7 @@
 #include "joystick.h"
 #include "pca9532.h"
 #include <stdio.h>
-
+#include <stdbool.h>
 #include "./myRtc.h"
 #include "./ledStrips.h"
 #include "screenManagment.h"
@@ -146,7 +146,6 @@ int main(void) {
 	time2.HOUR = 00;
 
 	init_ssp();
-	//joystick_init();
 	rtc_init();
 	rtc_set_time();
 
@@ -175,6 +174,7 @@ int main(void) {
 	uint8_t bufTemp[2] = { 0 };
 	RTC_TIME_Type time;
 	uint8_t barId;
+	bool timerOn = false;
 	while (1) {
 
 		//

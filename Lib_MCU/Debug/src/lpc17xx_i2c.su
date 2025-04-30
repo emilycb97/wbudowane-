@@ -1,5 +1,5 @@
-C:\Users\student\Desktop\roboczy\wbudowane-\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:1502:22:NVIC_EnableIRQ	16	static
-C:\Users\student\Desktop\roboczy\wbudowane-\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:1515:22:NVIC_DisableIRQ	16	static
+C:\Users\student\Desktop\final\wbudowane-\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:1502:22:NVIC_EnableIRQ	16	static
+C:\Users\student\Desktop\final\wbudowane-\Lib_CMSISv1p30_LPC17xx\inc/core_cm3.h:1515:22:NVIC_DisableIRQ	16	static
 ../src/lpc17xx_i2c.c:110:16:I2C_getNum	16	static
 ../src/lpc17xx_i2c.c:129:17:I2C_Start	16	static
 ../src/lpc17xx_i2c.c:148:13:I2C_Stop	16	static
