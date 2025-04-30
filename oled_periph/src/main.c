@@ -187,7 +187,9 @@ int main(void) {
 		}
 
 		if ((joy & JOYSTICK_DOWN) != 0) {
-
+			time2.SEC = 0;
+			time2.MIN = 00;
+			time2.HOUR = 00;
 		}
 
 		if ((joy & JOYSTICK_LEFT) != 0) {
