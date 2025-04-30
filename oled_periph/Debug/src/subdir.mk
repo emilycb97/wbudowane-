@@ -9,7 +9,8 @@ C_SRCS += \
 ../src/main.c \
 ../src/myRtc.c \
 ../src/myTimer.c \
-../src/screenManagment.c 
+../src/screenManagment.c \
+../src/spi_i2c.c 
 
 C_DEPS += \
 ./src/cr_startup_lpc17.d \
@@ -17,7 +18,8 @@ C_DEPS += \
 ./src/main.d \
 ./src/myRtc.d \
 ./src/myTimer.d \
-./src/screenManagment.d 
+./src/screenManagment.d \
+./src/spi_i2c.d 
 
 OBJS += \
 ./src/cr_startup_lpc17.o \
@@ -25,7 +27,8 @@ OBJS += \
 ./src/main.o \
 ./src/myRtc.o \
 ./src/myTimer.o \
-./src/screenManagment.o 
+./src/screenManagment.o \
+./src/spi_i2c.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -40,7 +43,7 @@ src/%.o: ../src/%.c src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/myTimer.d ./src/myTimer.o ./src/screenManagment.d ./src/screenManagment.o
+	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/myTimer.d ./src/myTimer.o ./src/screenManagment.d ./src/screenManagment.o ./src/spi_i2c.d ./src/spi_i2c.o
 
 .PHONY: clean-src
 

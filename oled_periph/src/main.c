@@ -139,7 +139,9 @@ void handleInput(uint8_t joystickState, RTC_TIME_Type *time2, bool* timerOn) {
 	}
 
 	if ((joystickState & JOYSTICK_LEFT) != 0) {
+		if(time2->MIN > 0) {
 		time2->MIN--;
+		}
 
 	}
 
@@ -148,7 +150,9 @@ void handleInput(uint8_t joystickState, RTC_TIME_Type *time2, bool* timerOn) {
 	}
 
 	if ((joystickState & JOYSTICK_RIGHT) != 0) {
-		time2->MIN++;
+		if(time2->MIN < 59) {
+			time2->MIN++;
+		}
 
 	}
 }
@@ -169,8 +173,6 @@ void enableI2C(){
 int main(void) {
 	//
 	int value = 0;
-
-	//
 
 	init_ssp();
 
