@@ -1,2 +1,2 @@
-../src/ledStrips.c:4:6:manageLedStrips	16	static
-../src/ledStrips.c:30:6:ledStripInit	16	static
+../src/ledStrips.c:9:6:ledStripInit	16	static
+../src/ledStrips.c:26:6:manageLedStrips	16	static

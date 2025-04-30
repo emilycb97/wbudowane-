@@ -1,4 +1,4 @@
-../src/spi_i2c.c:7:6:init_ssp	40	static
-../src/spi_i2c.c:42:5:I2CRead	72	static
-../src/spi_i2c.c:60:5:I2CWrite	72	static
-../src/spi_i2c.c:78:6:enableI2C	16	static
+../src/spi_i2c.c:18:6:init_ssp	40	static
+../src/spi_i2c.c:52:5:I2CRead	72	static
+../src/spi_i2c.c:77:5:I2CWrite	72	static
+../src/spi_i2c.c:104:6:enableI2C	16	static

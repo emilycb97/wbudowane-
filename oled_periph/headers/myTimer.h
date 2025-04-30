@@ -11,6 +11,6 @@
 #include <lpc17xx_timer.h>
 
 void timer_init(LPC_TIM_TypeDef *TIMx);
-void TIMER0_IRQHandler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type* time2, FunctionalState timerState);
+void timer_interrupt_handler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type* time2, FunctionalState timerState);
 
 #endif /* MYTIMER_H_ */

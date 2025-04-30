@@ -138,7 +138,7 @@ int main(void) {
 		/*get temperature multiplied by 10 */
 		temperature = temp_read();
 		lm75_read(bufTemp);
-		TIMER0_IRQHandler(LPC_TIM1, &time2, timerOn);
+		timer_interrupt_handler(LPC_TIM1, &time2, timerOn);
 
 		rtc_get_time(&time);
 
