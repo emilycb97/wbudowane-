@@ -3,6 +3,7 @@
 void rtc_init(void) {
 	RTC_Init(LPC_RTC); // Inicjalizacja RTC
 	RTC_Cmd(LPC_RTC, ENABLE); // Włączenie RTC
+	rtc_set_time();
 }
 
 void rtc_set_time(void) {

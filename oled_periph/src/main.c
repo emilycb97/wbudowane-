@@ -153,6 +153,19 @@ void handleInput(uint8_t joystickState, RTC_TIME_Type *time2, bool* timerOn) {
 	}
 }
 
+void enableI2C(){
+	//I2C config
+		PINSEL_CFG_Type PinCfg;
+		PinCfg.Funcnum = 2;
+		PinCfg.Pinnum = 10;
+		PinCfg.Portnum = 0;
+		PINSEL_ConfigPin(&PinCfg);
+		PinCfg.Pinnum = 11;
+		PINSEL_ConfigPin(&PinCfg);
+		I2C_Init(LPC_I2C2, 100000);
+		I2C_Cmd(LPC_I2C2, ENABLE); // enables i2c
+}
+
 int main(void) {
 	//
 	int value = 0;
@@ -164,18 +177,8 @@ int main(void) {
 	//RTC CONFIG
 	RTC_TIME_Type time;
 	rtc_init();
-	rtc_set_time();
 
-	//I2C config
-	PINSEL_CFG_Type PinCfg;
-	PinCfg.Funcnum = 2;
-	PinCfg.Pinnum = 10;
-	PinCfg.Portnum = 0;
-	PINSEL_ConfigPin(&PinCfg);
-	PinCfg.Pinnum = 11;
-	PINSEL_ConfigPin(&PinCfg);
-	I2C_Init(LPC_I2C2, 100000);
-	I2C_Cmd(LPC_I2C2, ENABLE);
+	enableI2C();
 
 	//LED STRIP CONFIG
 	LED_STRIP_CONF ledStrip;
