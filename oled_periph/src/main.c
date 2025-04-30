@@ -127,6 +127,32 @@ void barometer_readID(uint8_t *buf) {
 	I2CRead(BMP180_I2C_ADDR, buf, 1);
 }
 
+void handleInput(uint8_t joystickState, RTC_TIME_Type *time2, bool* timerOn) {
+	if ((joystickState & JOYSTICK_CENTER) != 0) {
+		// not used
+	}
+
+	if ((joystickState & JOYSTICK_DOWN) != 0) {
+		time2->SEC = 0;
+		time2->MIN = 00;
+		time2->HOUR = 00;
+	}
+
+	if ((joystickState & JOYSTICK_LEFT) != 0) {
+		time2->MIN--;
+
+	}
+
+	if ((joystickState & JOYSTICK_UP) != 0) {
+		*timerOn = !*timerOn;
+	}
+
+	if ((joystickState & JOYSTICK_RIGHT) != 0) {
+		time2->MIN++;
+
+	}
+}
+
 int main(void) {
 	//
 	int value = 0;
@@ -176,37 +202,14 @@ int main(void) {
 	uint8_t barId;
 	bool timerOn = false;
 	timer_init(LPC_TIM1);
+
 	while (1) {
 
 		//
 
 		joy = joystick_read();
 
-		if ((joy & JOYSTICK_CENTER) != 0) {
-
-		}
-
-		if ((joy & JOYSTICK_DOWN) != 0) {
-			time2.SEC = 0;
-			time2.MIN = 00;
-			time2.HOUR = 00;
-		}
-
-		if ((joy & JOYSTICK_LEFT) != 0) {
-			time2.MIN--;
-
-		}
-
-		if ((joy & JOYSTICK_UP) != 0) {
-			timerOn = !timerOn;
-		}
-
-		if ((joy & JOYSTICK_RIGHT) != 0) {
-			time2.MIN++;
-
-		}
-
-		//
+		handleInput(joy, &time2, &timerOn);
 
 		/*get temperature multiplied by 10 */
 		temperature = temp_read();
