@@ -9,6 +9,7 @@
 #define MYTIMER_H_
 
 void timer_init(LPC_TIM_TypeDef *TIMx);
+void TIMER0_IRQHandler(void);
 void timer_set_time(void);
 void timer_get_time(RTC_TIME_Type* time);
 
