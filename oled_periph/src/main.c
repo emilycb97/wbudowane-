@@ -159,18 +159,14 @@ int main(void) {
 
 	//
 
-	LED_STRIP_CONF ledStrip;
-	ledStrip.dir = 0;
-	ledStrip.cnt = 0;
-	ledStrip.ledOn = 0;
-	ledStrip.ledOff = 0;
-
-
-
 	init_ssp();
+
+	//RTC CONFIG
+	RTC_TIME_Type time;
 	rtc_init();
 	rtc_set_time();
 
+	//I2C config
 	PINSEL_CFG_Type PinCfg;
 	PinCfg.Funcnum = 2;
 	PinCfg.Pinnum = 10;
@@ -181,6 +177,12 @@ int main(void) {
 	I2C_Init(LPC_I2C2, 100000);
 	I2C_Cmd(LPC_I2C2, ENABLE);
 
+	//LED STRIP CONFIG
+	LED_STRIP_CONF ledStrip;
+	ledStrip.dir = 0;
+	ledStrip.cnt = 0;
+	ledStrip.ledOn = 0;
+	ledStrip.ledOff = 0;
 	pca9532_init();
 
 	oled_start();
@@ -191,10 +193,10 @@ int main(void) {
 			;  // Capture error
 	}
 
-
+	//buffers for internal termometer nad lm75 respectivley
 	int32_t temperature = 0;
 	uint8_t bufTemp[2] = { 0 };
-	RTC_TIME_Type time;
+
 	uint8_t barId;
 
 	//joystick variables
