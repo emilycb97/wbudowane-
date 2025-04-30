@@ -156,9 +156,7 @@ void handleInput(uint8_t joystickState, RTC_TIME_Type *time2, bool* timerOn) {
 int main(void) {
 	//
 	int value = 0;
-	uint8_t joy = 0;
 
-	joystick_init();
 	//
 
 	LED_STRIP_CONF ledStrip;
@@ -167,10 +165,7 @@ int main(void) {
 	ledStrip.ledOn = 0;
 	ledStrip.ledOff = 0;
 
-	RTC_TIME_Type time2;
-	time2.SEC = 0;
-	time2.MIN = 00;
-	time2.HOUR = 00;
+
 
 	init_ssp();
 	rtc_init();
@@ -196,10 +191,19 @@ int main(void) {
 			;  // Capture error
 	}
 
+
 	int32_t temperature = 0;
 	uint8_t bufTemp[2] = { 0 };
 	RTC_TIME_Type time;
 	uint8_t barId;
+
+	//joystick variables
+	RTC_TIME_Type time2;
+	time2.SEC = 0;
+	time2.MIN = 00;
+	time2.HOUR = 00;
+	uint8_t joy = 0;
+	joystick_init();
 	bool timerOn = false;
 	timer_init(LPC_TIM1);
 
