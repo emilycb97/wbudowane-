@@ -1,0 +1,2 @@
+../src/myTimer.c:10:6:timer_init	40	static
+../src/myTimer.c:45:6:TIMER0_IRQHandler	24	static

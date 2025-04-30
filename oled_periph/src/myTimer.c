@@ -26,7 +26,7 @@ void timer_init(LPC_TIM_TypeDef *TIMx) {
 	matchCfg.MatchValue = 1000; // 1000 ms = 1 second
 
 	TIM_ConfigMatch(TIMx, &matchCfg);
-
+/*
 	// Enable timer interrupt in NVIC
 	if (TIMx == LPC_TIM0) {
 		NVIC_EnableIRQ(TIMER0_IRQn);
@@ -37,15 +37,15 @@ void timer_init(LPC_TIM_TypeDef *TIMx) {
 	} else if (TIMx == LPC_TIM3) {
 		NVIC_EnableIRQ(TIMER3_IRQn);
 	}
-
+*/
 	// Start timer
 	TIM_Cmd(TIMx, ENABLE);
 }
 
 void TIMER0_IRQHandler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type* time2, FunctionalState timerState) {
     if(timerState == ENABLE) {
-	if (TIM_GetIntStatus(LPC_TIM0, TIM_MR0)) {
-        TIM_ClearIntPending(LPC_TIM0, TIM_MR0);
+	if (TIM_GetIntStatus(TIMx, TIM_MR0_INT)) {
+        TIM_ClearIntPending(TIMx, TIM_MR0_INT);
 
         if (time2->SEC > 0 || time2->MIN > 0 || time2->HOUR > 0) {
             if (time2->SEC == 0) {

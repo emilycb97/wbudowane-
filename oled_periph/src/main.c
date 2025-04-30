@@ -173,7 +173,6 @@ int main(void) {
 	int32_t temperature = 0;
 	uint8_t bufTemp[2] = { 0 };
 	RTC_TIME_Type time;
-	RTC_TIME_Type time2;
 	uint8_t barId;
 	bool timerOn = false;
 	timer_init(LPC_TIM1);
@@ -210,7 +209,7 @@ int main(void) {
 		/*get temperature multiplied by 10 */
 		temperature = temp_read();
 		lm75_read(bufTemp);
-		TIMER0_IRQHandler(LPC_TIM1, time2, timerOn);
+		TIMER0_IRQHandler(LPC_TIM1, &time2, timerOn);
 
 		rtc_get_time(&time);
 
