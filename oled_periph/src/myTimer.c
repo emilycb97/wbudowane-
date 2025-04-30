@@ -4,7 +4,7 @@
  *  Created on: 30 kwi 2025
  *      Author: student
  */
-#include "./myTimer.h"
+#include "../headers/myTimer.h"
 #include <lpc17xx_timer.h>
 
 void timer_init(LPC_TIM_TypeDef *TIMx) {

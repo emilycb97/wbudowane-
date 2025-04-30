@@ -1,4 +1,4 @@
-#include "./ledStrips.h"
+#include "../headers/ledStrips.h"
 #include "pca9532.h"
 
 void manageLedStrips(LED_STRIP_CONF *strip) {

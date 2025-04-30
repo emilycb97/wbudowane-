@@ -22,10 +22,10 @@
 #include "pca9532.h"
 #include <stdio.h>
 #include <stdbool.h>
-#include "./myRtc.h"
-#include "./ledStrips.h"
-#include "screenManagment.h"
-#include "./myTimer.h"
+#include "../headers/myRtc.h"
+#include "../headers/ledStrips.h"
+#include "../headers/screenManagment.h"
+#include "../headers/myTimer.h"
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
