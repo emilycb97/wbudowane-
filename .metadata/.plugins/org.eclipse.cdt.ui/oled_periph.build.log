@@ -1,4 +1,4 @@
-16:45:49 **** Incremental Build of configuration Debug for project oled_periph ****
+17:11:33 **** Incremental Build of configuration Debug for project oled_periph ****
 make -r -j16 all 
 make[1]: Nothing to be done for 'main-build'.
 Performing post-build steps
@@ -7,5 +7,5 @@ arm-none-eabi-size oled_periph.axf; # arm-none-eabi-objdump -h -S oled_periph.ax
   72184	   1720	   1288	  75192	  125b8	oled_periph.axf
  
 
-16:45:49 Build Finished. 0 errors, 0 warnings. (took 207ms)
+17:11:33 Build Finished. 0 errors, 0 warnings. (took 202ms)
 

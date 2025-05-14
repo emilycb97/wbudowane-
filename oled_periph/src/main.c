@@ -32,7 +32,7 @@ static uint32_t msTicks = 0;
 static uint8_t buf[10];
 
 //lm75 stuff
-#define LM75_I2C_ADDR (0x4D)
+#define LM75_I2C_ADDR (0x49)
 
 void SysTick_Handler(void) {
 	msTicks++;
