@@ -129,6 +129,9 @@ int main(void) {
 	bool timerOn = false;
 	timer_init(LPC_TIM1);
 
+	MUSIC_CONFIG musicConf;
+	setupMusic(&musicConf);
+
 	while (1) {
 
 		//
@@ -148,8 +151,8 @@ int main(void) {
 		oled_show_timer(time2, buf);
 		oled_show_clock(time, buf);
 
-		if(timerFinished){
-			playMusic();
+		if(timerFinished) {
+			playMusic(&musicConf);
 		}
 
 		barometer_readID(&barId);
