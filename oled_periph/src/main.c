@@ -82,6 +82,7 @@ void handleInput(uint8_t joystickState, RTC_TIME_Type *time2, bool* timerOn) {
 	if ((joystickState & JOYSTICK_RIGHT) != 0) {
 		if(time2->MIN < 59) {
 			time2->MIN++;
+			time2->SEC++;
 		}
 
 	}
@@ -139,16 +140,17 @@ int main(void) {
 		/*get temperature multiplied by 10 */
 		temperature = temp_read();
 		lm75_read(bufTemp);
-		if(timer_interrupt_handler(LPC_TIM1, &time2, timerOn)) {
-			setupMusic();
-		}
-
+		bool timerFinished = timer_interrupt_handler(LPC_TIM1, &time2, timerOn);
 		rtc_get_time(&time);
 
 		oled_show_temp1(temperature, buf);
 		oled_show_temp2(bufTemp, buf);
 		oled_show_timer(time2, buf);
 		oled_show_clock(time, buf);
+
+		if(timerFinished){
+			playMusic();
+		}
 
 		barometer_readID(&barId);
 		sprintf(buf, "%d", barId);
