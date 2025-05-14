@@ -7,35 +7,41 @@ C_SRCS += \
 ../src/cr_startup_lpc17.c \
 ../src/ledStrips.c \
 ../src/main.c \
+../src/music.c \
 ../src/myRtc.c \
 ../src/myTimer.c \
 ../src/screenManagment.c \
-../src/spi_i2c.c 
+../src/spi_i2c.c \
+../src/uart.c 
 
 C_DEPS += \
 ./src/cr_startup_lpc17.d \
 ./src/ledStrips.d \
 ./src/main.d \
+./src/music.d \
 ./src/myRtc.d \
 ./src/myTimer.d \
 ./src/screenManagment.d \
-./src/spi_i2c.d 
+./src/spi_i2c.d \
+./src/uart.d 
 
 OBJS += \
 ./src/cr_startup_lpc17.o \
 ./src/ledStrips.o \
 ./src/main.o \
+./src/music.o \
 ./src/myRtc.o \
 ./src/myTimer.o \
 ./src/screenManagment.o \
-./src/spi_i2c.o 
+./src/spi_i2c.o \
+./src/uart.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
 src/%.o: ../src/%.c src/subdir.mk
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU C Compiler'
-	arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\Desktop\final\wbudowane-\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\Desktop\final\wbudowane-\Lib_EaBaseBoard\inc" -I"C:\Users\student\Desktop\final\wbudowane-\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="$(<D)/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv1p30_LPC17xx -D__CODE_RED -D__NEWLIB__ -I"C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\inc" -I"C:\Users\student\wbudowane-\Lib_EaBaseBoard\inc" -I"C:\Users\student\wbudowane-\Lib_MCU\inc" -O0 -g3 -gdwarf-4 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fmerge-constants -fmacro-prefix-map="$(<D)/"= -mcpu=cortex-m3 -mthumb -D__NEWLIB__ -fstack-usage -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -43,7 +49,7 @@ src/%.o: ../src/%.c src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/myRtc.d ./src/myRtc.o ./src/myTimer.d ./src/myTimer.o ./src/screenManagment.d ./src/screenManagment.o ./src/spi_i2c.d ./src/spi_i2c.o
+	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/ledStrips.d ./src/ledStrips.o ./src/main.d ./src/main.o ./src/music.d ./src/music.o ./src/myRtc.d ./src/myRtc.o ./src/myTimer.d ./src/myTimer.o ./src/screenManagment.d ./src/screenManagment.o ./src/spi_i2c.d ./src/spi_i2c.o ./src/uart.d ./src/uart.o
 
 .PHONY: clean-src
 

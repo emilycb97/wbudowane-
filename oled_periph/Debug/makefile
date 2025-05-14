@@ -41,7 +41,7 @@ main-build: oled_periph.axf
 oled_periph.axf: $(OBJS) $(USER_OBJS) makefile $(OPTIONAL_TOOL_DEPS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\student\Desktop\final\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\Desktop\final\wbudowane-\Lib_EaBaseBoard\Debug" -L"C:\Users\student\Desktop\final\wbudowane-\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" $(OBJS) $(USER_OBJS) $(LIBS) -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
+	arm-none-eabi-gcc -nostdlib -L"C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug" -L"C:\Users\student\wbudowane-\Lib_EaBaseBoard\Debug" -L"C:\Users\student\wbudowane-\Lib_MCU\Debug" -Xlinker --gc-sections -Xlinker -Map=oled_periph.map -mcpu=cortex-m3 -mthumb -T oled_periph_Debug.ld -o "oled_periph.axf" $(OBJS) $(USER_OBJS) $(LIBS) -lCMSISv1p30_LPC17xx -lLib_EaBaseBoard -lLib_MCU
 	@echo 'Finished building target: $@'
 	@echo ' '
 

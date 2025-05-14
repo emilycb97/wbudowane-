@@ -6,7 +6,7 @@
  */
 #include "../headers/myTimer.h"
 #include <lpc17xx_timer.h>
-
+#include <stdbool.h>
 /*********************************************************************//**
  * @brief       Initializes a hardware timer to generate an interrupt every 1 second.
  * @param[in]   TIMx    Pointer to the timer peripheral (e.g., LPC_TIM0, LPC_TIM1, etc.)
@@ -50,8 +50,11 @@ void timer_init(LPC_TIM_TypeDef *TIMx) {
  * This function checks for a match interrupt on MR0 and, if the timer is
  * active, decrements the provided time structure (HH:MM:SS).
  **********************************************************************/
-void timer_interrupt_handler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type *time2,
+bool timer_interrupt_handler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type *time2,
         FunctionalState timerState) {
+
+	bool finished = false;
+
     if (timerState == ENABLE) {
         if (TIM_GetIntStatus(TIMx, TIM_MR0_INT)) {
 
@@ -67,10 +70,15 @@ void timer_interrupt_handler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type *time2,
                     }
                 } else {
                     time2->SEC--;
+                    if(time2->HOUR == 0 && timer2->MIN == 0 && timer2->SEC ==0) {
+                    	finished = true;
+                    }
                 }
             }
         }
         TIM_ClearIntPending(TIMx, TIM_MR0_INT);
     }
+
+    return finished;
 }
 
