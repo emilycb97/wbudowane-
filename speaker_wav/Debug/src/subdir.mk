@@ -5,18 +5,15 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/cr_startup_lpc17.c \
-../src/main.c \
-../src/startupSound_8k.c 
+../src/main.c 
 
 C_DEPS += \
 ./src/cr_startup_lpc17.d \
-./src/main.d \
-./src/startupSound_8k.d 
+./src/main.d 
 
 OBJS += \
 ./src/cr_startup_lpc17.o \
-./src/main.o \
-./src/startupSound_8k.o 
+./src/main.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -31,7 +28,7 @@ src/%.o: ../src/%.c src/subdir.mk
 clean: clean-src
 
 clean-src:
-	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/main.d ./src/main.o ./src/startupSound_8k.d ./src/startupSound_8k.o
+	-$(RM) ./src/cr_startup_lpc17.d ./src/cr_startup_lpc17.o ./src/main.d ./src/main.o
 
 .PHONY: clean-src
 

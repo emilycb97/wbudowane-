@@ -58,10 +58,6 @@ Discarded input sections
  .debug_macro   0x00000000      0x103 ./src/main.o
  .debug_macro   0x00000000       0x6a ./src/main.o
  .debug_macro   0x00000000      0x1df ./src/main.o
- .group         0x00000000        0xc ./src/startupSound_8k.o
- .text          0x00000000        0x0 ./src/startupSound_8k.o
- .bss           0x00000000        0x0 ./src/startupSound_8k.o
- .debug_macro   0x00000000      0xab4 ./src/startupSound_8k.o
  .group         0x00000000        0xc C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
  .group         0x00000000        0xc C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
  .group         0x00000000        0xc C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
@@ -302,7 +298,6 @@ Linker script and memory map
 
 LOAD ./src/cr_startup_lpc17.o
 LOAD ./src/main.o
-LOAD ./src/startupSound_8k.o
 LOAD C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a
 LOAD C:\Users\student\wbudowane-\Lib_EaBaseBoard\Debug\libLib_EaBaseBoard.a
 LOAD C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a
@@ -325,7 +320,7 @@ END GROUP
                 0x20084000                        __top_RamAHB32 = 0x20084000
                 0x20084000                        __top_RAM2 = 0x20084000
 
-.text           0x00000000     0x8104
+.text           0x00000000     0x12a4
  FILL mask 0xff
                 0x00000000                        __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -334,15 +329,15 @@ END GROUP
                 0x000000cc                        . = ALIGN (0x4)
                 0x000000cc                        __section_table_start = .
                 0x000000cc                        __data_section_table = .
-                0x000000cc        0x4 LONG 0x810c LOADADDR (.data)
+                0x000000cc        0x4 LONG 0x12ac LOADADDR (.data)
                 0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
-                0x000000d4        0x4 LONG 0x8 SIZEOF (.data)
-                0x000000d8        0x4 LONG 0x810c LOADADDR (.data_RAM2)
+                0x000000d4        0x4 LONG 0x4 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x12ac LOADADDR (.data_RAM2)
                 0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000e4                        __data_section_table_end = .
                 0x000000e4                        __bss_section_table = .
-                0x000000e4        0x4 LONG 0x10000008 ADDR (.bss)
+                0x000000e4        0x4 LONG 0x10000004 ADDR (.bss)
                 0x000000e8        0x4 LONG 0x0 SIZEOF (.bss)
                 0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
                 0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
@@ -498,45 +493,43 @@ END GROUP
                 0x00001280                __aeabi_idiv0
                 0x00001280                __aeabi_ldiv0
  *(.rodata .rodata.* .constdata .constdata.*)
- .rodata        0x00001284     0x6e60 ./src/startupSound_8k.o
-                0x00001284                sound_8k
  .rodata.str1.4
-                0x000080e4        0xe C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
- *fill*         0x000080f2        0x2 ff
+                0x00001284        0xe C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ *fill*         0x00001292        0x2 ff
  .rodata.str1.4
-                0x000080f4       0x10 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
-                0x00008104                        . = ALIGN (0x4)
+                0x00001294       0x10 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x000012a4                        . = ALIGN (0x4)
 
-.glue_7         0x00008104        0x0
- .glue_7        0x00008104        0x0 linker stubs
+.glue_7         0x000012a4        0x0
+ .glue_7        0x000012a4        0x0 linker stubs
 
-.glue_7t        0x00008104        0x0
- .glue_7t       0x00008104        0x0 linker stubs
+.glue_7t        0x000012a4        0x0
+ .glue_7t       0x000012a4        0x0 linker stubs
 
-.vfp11_veneer   0x00008104        0x0
- .vfp11_veneer  0x00008104        0x0 linker stubs
+.vfp11_veneer   0x000012a4        0x0
+ .vfp11_veneer  0x000012a4        0x0 linker stubs
 
-.v4_bx          0x00008104        0x0
- .v4_bx         0x00008104        0x0 linker stubs
+.v4_bx          0x000012a4        0x0
+ .v4_bx         0x000012a4        0x0 linker stubs
 
-.iplt           0x00008104        0x0
- .iplt          0x00008104        0x0 ./src/cr_startup_lpc17.o
+.iplt           0x000012a4        0x0
+ .iplt          0x000012a4        0x0 ./src/cr_startup_lpc17.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM.exidx      0x00008104        0x8
-                0x00008104                        __exidx_start = .
+.ARM.exidx      0x000012a4        0x8
+                0x000012a4                        __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
  .ARM.exidx.text.__udivmoddi4
-                0x00008104        0x8 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x0000810c                        __exidx_end = .
-                0x0000810c                        _etext = .
+                0x000012a4        0x8 c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x000012ac                        __exidx_end = .
+                0x000012ac                        _etext = .
 
-.rel.dyn        0x0000810c        0x0
- .rel.iplt      0x0000810c        0x0 ./src/cr_startup_lpc17.o
+.rel.dyn        0x000012ac        0x0
+ .rel.iplt      0x000012ac        0x0 ./src/cr_startup_lpc17.o
 
-.data_RAM2      0x2007c000        0x0 load address 0x0000810c
+.data_RAM2      0x2007c000        0x0 load address 0x000012ac
  FILL mask 0xff
                 [!provide]                        PROVIDE (__start_data_RAM2 = .)
                 [!provide]                        PROVIDE (__start_data_RamAHB32 = .)
@@ -557,7 +550,7 @@ END GROUP
                 0x10000000                        . = ALIGN (0x4)
                 0x10000000                        _end_uninit_RESERVED = .
 
-.data           0x10000000        0x8 load address 0x0000810c
+.data           0x10000000        0x4 load address 0x000012ac
  FILL mask 0xff
                 0x10000000                        _data = .
                 [!provide]                        PROVIDE (__start_data_RAM = .)
@@ -568,17 +561,15 @@ END GROUP
  *(DataQuickAccess)
  *(RamFunction)
  *(.data*)
- .data          0x10000000        0x4 ./src/startupSound_8k.o
-                0x10000000                sound_sz
- .data          0x10000004        0x4 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
-                0x10000004                SystemCoreClock
-                0x10000008                        . = ALIGN (0x4)
-                0x10000008                        _edata = .
+ .data          0x10000000        0x4 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                0x10000000                SystemCoreClock
+                0x10000004                        . = ALIGN (0x4)
+                0x10000004                        _edata = .
                 [!provide]                        PROVIDE (__end_data_RAM = .)
                 [!provide]                        PROVIDE (__end_data_RamLoc32 = .)
 
-.igot.plt       0x10000008        0x0 load address 0x00008114
- .igot.plt      0x10000008        0x0 ./src/cr_startup_lpc17.o
+.igot.plt       0x10000004        0x0 load address 0x000012b0
+ .igot.plt      0x10000004        0x0 ./src/cr_startup_lpc17.o
 
 .bss_RAM2       0x2007c000        0x0
                 [!provide]                        PROVIDE (__start_bss_RAM2 = .)
@@ -591,14 +582,14 @@ END GROUP
                 [!provide]                        PROVIDE (__end_bss_RAM2 = .)
                 [!provide]                        PROVIDE (__end_bss_RamAHB32 = .)
 
-.bss            0x10000008        0x0
-                0x10000008                        _bss = .
+.bss            0x10000004        0x0
+                0x10000004                        _bss = .
                 [!provide]                        PROVIDE (__start_bss_RAM = .)
                 [!provide]                        PROVIDE (__start_bss_RamLoc32 = .)
  *(.bss*)
  *(COMMON)
-                0x10000008                        . = ALIGN (0x4)
-                0x10000008                        _ebss = .
+                0x10000004                        . = ALIGN (0x4)
+                0x10000004                        _ebss = .
                 [!provide]                        PROVIDE (__end_bss_RAM = .)
                 [!provide]                        PROVIDE (__end_bss_RamLoc32 = .)
                 [!provide]                        PROVIDE (end = .)
@@ -614,65 +605,61 @@ END GROUP
                 [!provide]                        PROVIDE (__end_noinit_RAM2 = .)
                 [!provide]                        PROVIDE (__end_noinit_RamAHB32 = .)
 
-.noinit         0x10000008        0x0
-                0x10000008                        _noinit = .
+.noinit         0x10000004        0x0
+                0x10000004                        _noinit = .
                 [!provide]                        PROVIDE (__start_noinit_RAM = .)
                 [!provide]                        PROVIDE (__start_noinit_RamLoc32 = .)
  *(.noinit*)
-                0x10000008                        . = ALIGN (0x4)
-                0x10000008                        _end_noinit = .
+                0x10000004                        . = ALIGN (0x4)
+                0x10000004                        _end_noinit = .
                 [!provide]                        PROVIDE (__end_noinit_RAM = .)
                 [!provide]                        PROVIDE (__end_noinit_RamLoc32 = .)
                 [!provide]                        PROVIDE (_pvHeapStart = DEFINED (__user_heap_base)?__user_heap_base:.)
                 0x10008000                        PROVIDE (_vStackTop = DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
                 [!provide]                        PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
                 0x00000000                        _image_start = LOADADDR (.text)
-                0x00008114                        _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00008114                        _image_size = (_image_end - _image_start)
+                0x000012b0                        _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x000012b0                        _image_size = (_image_end - _image_start)
 OUTPUT(speaker_wav.axf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000     0x2c3c
+.debug_info     0x00000000     0x2bc5
  .debug_info    0x00000000      0x1f7 ./src/cr_startup_lpc17.o
  .debug_info    0x000001f7      0x2b9 ./src/main.o
- .debug_info    0x000004b0       0x77 ./src/startupSound_8k.o
- .debug_info    0x00000527      0x2fb C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_info    0x00000822      0x27a C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
- .debug_info    0x00000a9c      0xdc4 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
- .debug_info    0x00001860      0x477 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
- .debug_info    0x00001cd7      0x985 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
- .debug_info    0x0000265c      0x5e0 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_info    0x000004b0      0x2fb C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_info    0x000007ab      0x27a C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_info    0x00000a25      0xdc4 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_info    0x000017e9      0x477 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_info    0x00001c60      0x985 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_info    0x000025e5      0x5e0 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
 
-.debug_abbrev   0x00000000      0xcb7
+.debug_abbrev   0x00000000      0xc4f
  .debug_abbrev  0x00000000       0xec ./src/cr_startup_lpc17.o
  .debug_abbrev  0x000000ec      0x15f ./src/main.o
- .debug_abbrev  0x0000024b       0x68 ./src/startupSound_8k.o
- .debug_abbrev  0x000002b3       0xf4 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_abbrev  0x000003a7      0x12b C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
- .debug_abbrev  0x000004d2      0x239 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
- .debug_abbrev  0x0000070b      0x164 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
- .debug_abbrev  0x0000086f      0x273 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
- .debug_abbrev  0x00000ae2      0x1d5 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_abbrev  0x0000024b       0xf4 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_abbrev  0x0000033f      0x12b C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_abbrev  0x0000046a      0x239 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_abbrev  0x000006a3      0x164 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_abbrev  0x00000807      0x273 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_abbrev  0x00000a7a      0x1d5 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
 
-.debug_aranges  0x00000000      0x360
+.debug_aranges  0x00000000      0x348
  .debug_aranges
                 0x00000000       0x70 ./src/cr_startup_lpc17.o
  .debug_aranges
                 0x00000070       0x28 ./src/main.o
  .debug_aranges
-                0x00000098       0x18 ./src/startupSound_8k.o
+                0x00000098       0x28 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
  .debug_aranges
-                0x000000b0       0x28 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                0x000000c0       0x40 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
  .debug_aranges
-                0x000000d8       0x40 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+                0x00000100       0xf8 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
  .debug_aranges
-                0x00000118       0xf8 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x000001f8       0x48 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
  .debug_aranges
-                0x00000210       0x48 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x00000240       0xa8 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
  .debug_aranges
-                0x00000258       0xa8 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
- .debug_aranges
-                0x00000300       0x60 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x000002e8       0x60 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
 
 .debug_ranges   0x00000000      0x2c8
  .debug_ranges  0x00000000       0x60 ./src/cr_startup_lpc17.o
@@ -684,7 +671,7 @@ LOAD linker stubs
  .debug_ranges  0x000001e0       0x98 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
  .debug_ranges  0x00000278       0x50 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
 
-.debug_macro    0x00000000     0x47f0
+.debug_macro    0x00000000     0x47df
  .debug_macro   0x00000000       0x79 ./src/cr_startup_lpc17.o
  .debug_macro   0x00000079      0xab4 ./src/cr_startup_lpc17.o
  .debug_macro   0x00000b2d       0x22 ./src/cr_startup_lpc17.o
@@ -704,62 +691,57 @@ LOAD linker stubs
  .debug_macro   0x00001ce5      0x33f ./src/main.o
  .debug_macro   0x00002024       0x40 ./src/main.o
  .debug_macro   0x00002064       0xed ./src/main.o
- .debug_macro   0x00002151       0x11 ./src/startupSound_8k.o
- .debug_macro   0x00002162      0x113 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_macro   0x00002275      0xaae C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_macro   0x00002d23       0x10 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_macro   0x00002d33      0x12e C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_macro   0x00002e61      0x5b3 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_macro   0x00003414      0x7d5 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_macro   0x00003be9       0x8c C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
- .debug_macro   0x00003c75       0x3a C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
- .debug_macro   0x00003caf      0x2fa C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
- .debug_macro   0x00003fa9       0xda C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
- .debug_macro   0x00004083       0x83 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
- .debug_macro   0x00004106       0x40 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
- .debug_macro   0x00004146       0x7a C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
- .debug_macro   0x000041c0       0x95 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
- .debug_macro   0x00004255       0xe7 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
- .debug_macro   0x0000433c      0x146 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
- .debug_macro   0x00004482       0x7a C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
- .debug_macro   0x000044fc      0x2f4 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00002151      0x113 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002264      0xaae C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002d12       0x10 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002d22      0x12e C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00002e50      0x5b3 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00003403      0x7d5 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_macro   0x00003bd8       0x8c C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_macro   0x00003c64       0x3a C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_macro   0x00003c9e      0x2fa C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_macro   0x00003f98       0xda C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_macro   0x00004072       0x83 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x000040f5       0x40 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_macro   0x00004135       0x7a C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_macro   0x000041af       0x95 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00004244       0xe7 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x0000432b      0x146 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_macro   0x00004471       0x7a C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x000044eb      0x2f4 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
 
-.debug_line     0x00000000     0x26b6
+.debug_line     0x00000000     0x267d
  .debug_line    0x00000000      0x435 ./src/cr_startup_lpc17.o
  .debug_line    0x00000435      0x489 ./src/main.o
- .debug_line    0x000008be       0x39 ./src/startupSound_8k.o
- .debug_line    0x000008f7      0x3ef C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
- .debug_line    0x00000ce6      0x32e C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
- .debug_line    0x00001014      0x732 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
- .debug_line    0x00001746      0x359 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
- .debug_line    0x00001a9f      0x84b C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
- .debug_line    0x000022ea      0x3cc C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_line    0x000008be      0x3ef C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x00000cad      0x32e C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_line    0x00000fdb      0x732 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_line    0x0000170d      0x359 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_line    0x00001a66      0x84b C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_line    0x000022b1      0x3cc C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
 
-.debug_str      0x00000000     0xe1b7
+.debug_str      0x00000000     0xe19e
  .debug_str     0x00000000     0x3ce1 ./src/cr_startup_lpc17.o
                                0x3e3c (size before relaxing)
  .debug_str     0x00003ce1     0x69f9 ./src/main.o
                                0xa6fe (size before relaxing)
- .debug_str     0x0000a6da       0x19 ./src/startupSound_8k.o
-                               0x2dfb (size before relaxing)
- .debug_str     0x0000a6f3     0x1aa5 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+ .debug_str     0x0000a6da     0x1aa5 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
                                0x884d (size before relaxing)
- .debug_str     0x0000c198     0x1473 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+ .debug_str     0x0000c17f     0x1473 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
                                0x9bfc (size before relaxing)
- .debug_str     0x0000d60b      0x427 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+ .debug_str     0x0000d5f2      0x427 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
                                0x8dab (size before relaxing)
- .debug_str     0x0000da32      0x1fa C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+ .debug_str     0x0000da19      0x1fa C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
                                0x8cd2 (size before relaxing)
- .debug_str     0x0000dc2c      0x4a5 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+ .debug_str     0x0000dc13      0x4a5 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
                                0xaa8b (size before relaxing)
- .debug_str     0x0000e0d1       0xe6 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+ .debug_str     0x0000e0b8       0xe6 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
                                0x9a41 (size before relaxing)
 
 .comment        0x00000000       0x45
  .comment       0x00000000       0x45 ./src/cr_startup_lpc17.o
                                  0x46 (size before relaxing)
  .comment       0x00000045       0x46 ./src/main.o
- .comment       0x00000045       0x46 ./src/startupSound_8k.o
  .comment       0x00000045       0x46 C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
  .comment       0x00000045       0x46 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
  .comment       0x00000045       0x46 C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
@@ -774,25 +756,23 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000002d       0x2d ./src/main.o
  .ARM.attributes
-                0x0000005a       0x2d ./src/startupSound_8k.o
+                0x0000005a       0x2d C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
  .ARM.attributes
-                0x00000087       0x2d C:\Users\student\wbudowane-\Lib_CMSISv1p30_LPC17xx\Debug\libCMSISv1p30_LPC17xx.a(system_LPC17xx.o)
+                0x00000087       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
  .ARM.attributes
-                0x000000b4       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_dac.o)
+                0x000000b4       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
  .ARM.attributes
-                0x000000e1       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_gpio.o)
+                0x000000e1       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
  .ARM.attributes
-                0x0000010e       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_pinsel.o)
+                0x0000010e       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
  .ARM.attributes
-                0x0000013b       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_timer.o)
+                0x0000013b       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
  .ARM.attributes
-                0x00000168       0x2d C:\Users\student\wbudowane-\Lib_MCU\Debug\libLib_MCU.a(lpc17xx_clkpwr.o)
+                0x00000168       0x1d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x00000195       0x1d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_aeabi_uldivmod.o)
+                0x00000185       0x2d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x000001b2       0x2d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
- .ARM.attributes
-                0x000001df       0x1d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
+                0x000001b2       0x1d c:/nxp/mcuxpressoide_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.9.1.202402080819/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/thumb/v7-m/nofp\libgcc.a(_dvmd_tls.o)
 
 .debug_frame    0x00000000      0xc04
  .debug_frame   0x00000000      0x120 ./src/cr_startup_lpc17.o

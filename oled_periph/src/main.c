@@ -26,6 +26,7 @@
 #include "../headers/screenManagment.h"
 #include "../headers/myTimer.h"
 #include "../headers/spi_i2c.h"
+#include "../headers/music.h"
 
 static uint32_t msTicks = 0;
 static uint8_t buf[10];
@@ -138,7 +139,9 @@ int main(void) {
 		/*get temperature multiplied by 10 */
 		temperature = temp_read();
 		lm75_read(bufTemp);
-		timer_interrupt_handler(LPC_TIM1, &time2, timerOn);
+		if(timer_interrupt_handler(LPC_TIM1, &time2, timerOn)) {
+			setupMusic();
+		}
 
 		rtc_get_time(&time);
 

@@ -1206,3 +1206,19 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/oled_periph/s
 
 !ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-05-14 15:37:43.122
 !MESSAGE Telnet session connected on port 3330->9942 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2025-05-14 15:49:40.738
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-05-14 15:49:41.745
+!MESSAGE RedlinkServer telnet session connected on port 3025->58800 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2025-05-14 15:53:31.812
+!MESSAGE cvc-complex-type.2.4.a: Invalid content was found starting with element '{"http://www.w3.org/2001/XInclude":include}'. One of '{include, parameters, script}' is expected.
+
+
+!ENTRY com.crt.log 1 0 2025-05-14 15:53:32.157
+!MESSAGE Starting GDB server [ C:/nxp/LinkServer_1.5.30/binaries/crt_emu_cm_redlink, --server, :10990, -msg-port=3314, -g, -mi, -2, -pLPC1769, -vendor=NXP, --reset=VECTRESET, -ProbeHandle=1, -CoreIndex=0, --flash-hashing, --flash-driver, LPC175x_6x_512.cfx, -x, C:/nxp/MCUXpressoIDE_11.9.1_2170/ide/plugins/com.nxp.mcuxpresso.tools.bin.win32_11.9.1.202402080819/binaries/, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2025-05-14 15:53:34.839
+!MESSAGE Telnet session connected on port 3330->3327 @ 127.0.0.1

@@ -1,4 +1,4 @@
-15:37:38 **** Incremental Build of configuration Debug for project Lib_MCU ****
+15:53:30 **** Incremental Build of configuration Debug for project Lib_MCU ****
 make -r -j16 all 
 make[1]: Nothing to be done for 'main-build'.
 Performing post-build steps
@@ -30,5 +30,5 @@ arm-none-eabi-size libLib_MCU.a ; # arm-none-eabi-objdump -h -S libLib_MCU.a >li
     732	      0	      0	    732	    2dc	lpc17xx_wdt.o (ex libLib_MCU.a)
  
 
-15:37:38 Build Finished. 0 errors, 0 warnings. (took 204ms)
+15:53:30 Build Finished. 0 errors, 0 warnings. (took 201ms)
 

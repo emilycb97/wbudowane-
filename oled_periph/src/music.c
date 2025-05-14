@@ -1,4 +1,9 @@
 #include "../headers/music.h"
+#include "lpc17xx_pinsel.h"
+#include "lpc17xx_gpio.h"
+#include "lpc17xx_dac.h"
+#include "lpc17xx_timer.h"
+#include <stdint.h>
 
 extern const unsigned char sound_8k[];
 extern int sound_sz;

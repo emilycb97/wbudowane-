@@ -70,7 +70,7 @@ bool timer_interrupt_handler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type *time2,
                     }
                 } else {
                     time2->SEC--;
-                    if(time2->HOUR == 0 && timer2->MIN == 0 && timer2->SEC ==0) {
+                    if(time2->HOUR == 0 && time2->MIN == 0 && time2->SEC ==0) {
                     	finished = true;
                     }
                 }
