@@ -34,9 +34,6 @@ static uint8_t buf[10];
 //lm75 stuff
 #define LM75_I2C_ADDR (0x4D)
 
-//barometer stuff
-#define BMP180_I2C_ADDR (0x77)
-
 void SysTick_Handler(void) {
 	msTicks++;
 }
@@ -49,12 +46,6 @@ void lm75_read(uint8_t *buf) {
 	buf[0] = 0;
 	buf[1] = 0;
 	I2CRead(LM75_I2C_ADDR, buf, 2);
-}
-
-void barometer_readID(uint8_t *buf) {
-	buf[0] = 0xD0;	// rejestr ID
-	I2CWrite(BMP180_I2C_ADDR, buf, 1);
-	I2CRead(BMP180_I2C_ADDR, buf, 1);
 }
 
 void handleInput(uint8_t joystickState, RTC_TIME_Type *time2, bool* timerOn) {
@@ -117,8 +108,6 @@ int main(void) {
 	int32_t temperature = 0;
 	uint8_t bufTemp[2] = { 0 };
 
-	uint8_t barId;
-
 	//joystick variables
 	RTC_TIME_Type time2;
 	time2.SEC = 0;
@@ -133,8 +122,6 @@ int main(void) {
 	setupMusic(&musicConf);
 
 	while (1) {
-
-		//
 
 		joy = joystick_read();
 
@@ -155,9 +142,6 @@ int main(void) {
 			playMusic(&musicConf);
 		}
 
-		barometer_readID(&barId);
-		sprintf(buf, "%d", barId);
-		oled_putString(1, 52, buf, OLED_COLOR_BLACK, OLED_COLOR_WHITE);
 		manageLedStrips(&ledStrip);
 
 		/* delay */
