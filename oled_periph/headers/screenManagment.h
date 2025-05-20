@@ -1,10 +1,3 @@
-/*
- * screenManagment.h
- *
- *  Created on: 2 kwi 2025
- *      Author: student
- */
-
 #ifndef SCREENMANAGMENT_H_
 #define SCREENMANAGMENT_H_
 #include <stdint.h>
@@ -12,7 +5,7 @@
 #include "oled.h"
 #include <stdio.h>
 
-void oled_start();
+void oled_start(void);
 
 void oled_show_temp1(int32_t temperature, uint8_t* buf);
 

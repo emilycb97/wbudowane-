@@ -10,10 +10,10 @@
 #include <stdint.h>
 
 typedef struct{
-	uint8_t dir;
-	uint32_t cnt;
-	uint16_t ledOn;
-	uint16_t ledOff;
+    uint8_t dir;
+    uint32_t cnt;
+    uint16_t ledOn;
+    uint16_t ledOff;
 }LED_STRIP_CONF;
 
 
