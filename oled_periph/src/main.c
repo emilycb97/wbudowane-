@@ -35,126 +35,118 @@ static uint8_t buf[10];
 #define LM75_I2C_ADDR (0x49)
 
 void SysTick_Handler(void) {
-	msTicks++;
+    msTicks++;
 }
 
 static uint32_t getTicks(void) {
-	return msTicks;
+    return msTicks;
 }
 
 void lm75_read(uint8_t *buf) {
-	buf[0] = 0;
-	buf[1] = 0;
-	I2CRead(LM75_I2C_ADDR, buf, 2);
+    buf[0] = 0;
+    buf[1] = 0;
+    I2CRead(LM75_I2C_ADDR, buf, 2);
 }
 
 void handleInput(uint8_t joystickState, RTC_TIME_Type *time2, bool* timerOn) {
-	if ((joystickState & JOYSTICK_CENTER) != 0) {
-		// not used
-	}
+    if ((joystickState & JOYSTICK_CENTER) != 0) {
+        // not used
+    }
 
-	if ((joystickState & JOYSTICK_DOWN) != 0) {
-		time2->SEC = 0;
-		time2->MIN = 00;
-		time2->HOUR = 00;
-	}
+    if ((joystickState & JOYSTICK_DOWN) != 0) {
+        time2->SEC = 0;
+        time2->MIN = 0;
+        time2->HOUR = 0;
+    }
 
-	if ((joystickState & JOYSTICK_LEFT) != 0) {
-		if(time2->MIN > 0) {
-		time2->MIN--;
-		}
+    if ((joystickState & JOYSTICK_LEFT) != 0) {
+        if(time2->MIN > 0) {
+            time2->MIN--;
+        }
 
-	}
+    }
 
-	if ((joystickState & JOYSTICK_UP) != 0) {
-		*timerOn = !*timerOn;
-	}
+    if ((joystickState & JOYSTICK_UP) != 0) {
+        *timerOn = !*timerOn;
+    }
 
-	if ((joystickState & JOYSTICK_RIGHT) != 0) {
-		if(time2->MIN < 59) {
-			time2->MIN++;
-			time2->SEC++;
-		}
+    if ((joystickState & JOYSTICK_RIGHT) != 0) {
+        if(time2->MIN < 59) {
+            time2->MIN++;
+            time2->SEC++;
+        }
 
-	}
+    }
 }
 
 
 
 int main(void) {
 
-	init_ssp();
+    init_ssp();
 
-	//RTC CONFIG
-	RTC_TIME_Type time;
-	rtc_init();
+    //RTC CONFIG
+    RTC_TIME_Type time;
+    rtc_init();
 
-	enableI2C();
+    enableI2C();
 
-	//LED STRIP CONFIG
-	LED_STRIP_CONF ledStrip;
-	ledStripInit(&ledStrip);
-	pca9532_init();
+    //LED STRIP CONFIG
+    LED_STRIP_CONF ledStrip;
+    ledStripInit(&ledStrip);
+    pca9532_init();
 
-	oled_start();
-	temp_init(&getTicks);
+    oled_start();
+    temp_init(&getTicks);
 
-	if (SysTick_Config(SystemCoreClock / 1000)) {
-		while (1)
-			;  // Capture error
-	}
+    if (SysTick_Config(SystemCoreClock / 1000)) {
+        while (1) {
+            ;
+        }
+    }
 
-	//buffers for internal termometer nad lm75 respectivley
-	int32_t temperature = 0;
-	uint8_t bufTemp[2] = { 0 };
+    //buffers for internal termometer nad lm75 respectivley
+    //int32_t temperature = 0;
+    uint8_t bufTemp[2] = { 0 };
 
-	//joystick variables
-	RTC_TIME_Type time2;
-	time2.SEC = 0;
-	time2.MIN = 00;
-	time2.HOUR = 00;
-	uint8_t joy = 0;
-	joystick_init();
-	bool timerOn = false;
-	timer_init(LPC_TIM1);
+    //joystick variables
+    RTC_TIME_Type time2;
+    time2.SEC = 0;
+    time2.MIN = 0;
+    time2.HOUR = 0;
+    //uint8_t joy = 0;
+    joystick_init();
+    bool timerOn = false;
+    timer_init(LPC_TIM1);
 
-	MUSIC_CONFIG musicConf;
-	setupMusic(&musicConf);
+    MUSIC_CONFIG musicConf;
+    setupMusic(&musicConf);
 
-	while (1) {
+    while (1) {
 
-		joy = joystick_read();
+        uint8_t joy = joystick_read();
 
-		handleInput(joy, &time2, &timerOn);
+        handleInput(joy, &time2, &timerOn);
 
-		/*get temperature multiplied by 10 */
-		temperature = temp_read();
-		lm75_read(bufTemp);
-		bool timerFinished = timer_interrupt_handler(LPC_TIM1, &time2, timerOn);
-		rtc_get_time(&time);
+        /*get temperature multiplied by 10 */
+        int32_t temperature = temp_read();
+        lm75_read(bufTemp);
+        bool timerFinished = timer_interrupt_handler(LPC_TIM1, &time2, timerOn);
+        rtc_get_time(&time);
 
-		oled_show_temp1(temperature, buf);
-		oled_show_temp2(bufTemp, buf);
-		oled_show_timer(time2, buf);
-		oled_show_clock(time, buf);
+        oled_show_temp1(temperature, buf);
+        oled_show_temp2(bufTemp, buf);
+        oled_show_timer(time2, buf);
+        oled_show_clock(time, buf);
 
-		if(timerFinished) {
-			playMusic(&musicConf);
-		}
+        if(timerFinished) {
+            playMusic(&musicConf);
+        }
 
-		manageLedStrips(&ledStrip);
+        manageLedStrips(&ledStrip);
 
-		/* delay */
-		Timer0_Wait(200);
-	}
+        /* delay */
+        Timer0_Wait(200);
+    }
 
-}
-
-void check_failed(uint8_t *file, uint32_t line) {
-	/* User can add his own implementation to report the file name and line number,
-	 ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
-
-	/* Infinite loop */
-	while (1)
-		;
 }

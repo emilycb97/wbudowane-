@@ -51,27 +51,27 @@ void timer_init(LPC_TIM_TypeDef *TIMx) {
  * active, decrements the provided time structure (HH:MM:SS).
  **********************************************************************/
 bool timer_interrupt_handler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type *time2,
-        FunctionalState timerState) {
+                             FunctionalState timerState) {
 
-	bool finished = false;
+    bool finished = false;
 
     if (timerState == ENABLE) {
         if (TIM_GetIntStatus(TIMx, TIM_MR0_INT)) {
-
-            if (time2->SEC > 0 || time2->MIN > 0 || time2->HOUR > 0) {
+            if ((time2->SEC > 0) || (time2->MIN > 0) || (time2->HOUR > 0)) {
                 if (time2->SEC == 0) {
                     time2->SEC = 59;
                     if (time2->MIN == 0) {
                         time2->MIN = 59;
-                        if (time2->HOUR > 0)
+                        if (time2->HOUR > 0) {
                             time2->HOUR--;
+                        }
                     } else {
                         time2->MIN--;
                     }
                 } else {
                     time2->SEC--;
-                    if(time2->HOUR == 0 && time2->MIN == 0 && time2->SEC ==0) {
-                    	finished = true;
+                    if ((time2->HOUR == 0) && (time2->MIN == 0) && (time2->SEC == 0)) {
+                        finished = true;
                     }
                 }
             }
@@ -81,4 +81,3 @@ bool timer_interrupt_handler(LPC_TIM_TypeDef *TIMx, RTC_TIME_Type *time2,
 
     return finished;
 }
-

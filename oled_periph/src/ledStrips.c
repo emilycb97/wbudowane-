@@ -24,26 +24,32 @@ void ledStripInit(LED_STRIP_CONF *ledStrip) {
  * via the PCA9532 I/O expander.
  **********************************************************************/
 void manageLedStrips(LED_STRIP_CONF *strip) {
-    if (strip->cnt < 16)
-        strip->ledOn |= (1 << strip->cnt);
-    if (strip->cnt > 15)
-        strip->ledOn &= ~(1 << (strip->cnt - 16));
-
-    if (strip->cnt > 15)
-        strip->ledOff |= (1 << (strip->cnt - 16));
-    if (strip->cnt < 16)
-        strip->ledOff &= ~(1 << strip->cnt);
+    if (strip->cnt < (uint8_t)16) {
+        strip->ledOn |= (uint32_t)1U << strip->cnt;
+    }
+    if (strip->cnt > (uint8_t)15) {
+        strip->ledOn &= ~(uint32_t)(1UL << (strip->cnt - 16U));
+    }
+    if (strip->cnt > (uint8_t)15) {
+        strip->ledOff |= (uint32_t)(1UL << (strip->cnt - 16U));
+    }
+    if (strip->cnt < (uint8_t)16) {
+        strip->ledOff &= ~(uint32_t)(1UL << strip->cnt);
+    }
 
     pca9532_setLeds(strip->ledOn, strip->ledOff);
 
     if (strip->dir) {
-        if (strip->cnt == 0)
+        if (strip->cnt == (uint8_t)0) {
             strip->cnt = 31;
-        else
+        }
+        else {
             strip->cnt--;
+        }
     } else {
         strip->cnt++;
-        if (strip->cnt >= 32)
+        if (strip->cnt >= (uint8_t)32) {
             strip->cnt = 0;
+        }
     }
 }

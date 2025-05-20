@@ -5,92 +5,103 @@
 #include "lpc17xx_timer.h"
 #include <stdint.h>
 
-extern const unsigned char sound_8k[];
-extern int sound_sz;
+extern const uint8_t sound_8k[];
+extern const uint32_t sound_sz;
 
-void setupMusic(MUSIC_CONFIG *musicConfig) {
-	PINSEL_CFG_Type PinCfg;
+void setupMusic(MUSIC_CONFIG *musicConfig)
+{
+    PINSEL_CFG_Type PinCfg;
+    uint32_t gpioMask = 0U;
 
-	musicConfig->startFromByte = 0;
-	musicConfig->sampleRate = 0;
-	musicConfig->delay = 0;
+    if (musicConfig == NULL)
+    {
+        return;
+    }
 
-	GPIO_SetDir(2, 1 << 0, 1);
-	GPIO_SetDir(2, 1 << 1, 1);
+    musicConfig->startFromByte = 0U;
+    musicConfig->sampleRate = 0U;
+    musicConfig->delay = 0U;
+    musicConfig->errorCode = 0U;
 
-	GPIO_SetDir(0, 1 << 27, 1);
-	GPIO_SetDir(0, 1 << 28, 1);
-	GPIO_SetDir(2, 1 << 13, 1);
-	GPIO_SetDir(0, 1 << 26, 1);
+    /* Configure GPIO pins */
+    gpioMask = (1U << 0U);
+    GPIO_SetDir(2U, gpioMask, 1U);
 
-	GPIO_ClearValue(0, 1 << 27); //LM4811-clk
-	GPIO_ClearValue(0, 1 << 28); //LM4811-up/dn
-	GPIO_ClearValue(2, 1 << 13); //LM4811-shutdn
+    gpioMask = (1U << 1U);
+    GPIO_SetDir(2U, gpioMask, 1U);
 
-	/*
-	 * Init DAC pin connect
-	 * AOUT on P0.26
-	 */
-	PinCfg.Funcnum = 2;
-	PinCfg.OpenDrain = 0;
-	PinCfg.Pinmode = 0;
-	PinCfg.Pinnum = 26;
-	PinCfg.Portnum = 0;
-	PINSEL_ConfigPin(&PinCfg);
+    gpioMask = (1U << 27U);
+    GPIO_SetDir(0U, gpioMask, 1U);
+    GPIO_ClearValue(0U, gpioMask);
 
-	/* init DAC structure to default
-	 * Maximum	current is 700 uA
-	 * First value to AOUT is 0
-	 */
-	DAC_Init(LPC_DAC);
+    gpioMask = (1U << 28U);
+    GPIO_SetDir(0U, gpioMask, 1U);
+    GPIO_ClearValue(0U, gpioMask);
 
-	/* ChunkID */
-	if (sound_8k[musicConfig->startFromByte] != 'R' && sound_8k[musicConfig->startFromByte + 1] != 'I'
-			&& sound_8k[musicConfig->startFromByte + 2] != 'F' && sound_8k[musicConfig->startFromByte + 3] != 'F') {
-		return -1;
-	}
-	musicConfig->startFromByte += 4;
+    gpioMask = (1U << 13U);
+    GPIO_SetDir(2U, gpioMask, 1U);
+    GPIO_ClearValue(2U, gpioMask);
 
-	/* skip chunk size*/
-	musicConfig->startFromByte += 4;
+    gpioMask = (1U << 26U);
+    GPIO_SetDir(0U, gpioMask, 1U);
 
-	/* Format */
-	musicConfig->startFromByte += 4;
+    /* Configure DAC */
+    PinCfg.Funcnum = 2U;
+    PinCfg.OpenDrain = 0U;
+    PinCfg.Pinmode = 0U;
+    PinCfg.Pinnum = 26U;
+    PinCfg.Portnum = 0U;
+    PINSEL_ConfigPin(&PinCfg);
 
-	/* SubChunk1ID */
-	musicConfig->startFromByte += 4;
+    DAC_Init(LPC_DAC);
 
-	/* skip chunk size, audio format, num channels */
-	musicConfig->startFromByte += 8;
+    /* Check WAV header */
+    if ((sound_8k[0U] != (uint8_t)'R') || (sound_8k[1U] != (uint8_t)'I') ||
+        (sound_8k[2U] != (uint8_t)'F') || (sound_8k[3U] != (uint8_t)'F'))
+    {
+        musicConfig->errorCode = 1U;
+        return;
+    }
 
-	musicConfig->sampleRate = (sound_8k[musicConfig->startFromByte] | (sound_8k[musicConfig->startFromByte + 1] << 8)
-			| (sound_8k[musicConfig->startFromByte + 2] << 16) | (sound_8k[musicConfig->startFromByte + 3] << 24));
+    musicConfig->startFromByte = 20U;
 
-	if (musicConfig->sampleRate != 8000) {
-		return -1;
-	}
+    {
+        uint32_t rateOffset = musicConfig->startFromByte;
+        uint32_t sr0 = (uint32_t)sound_8k[rateOffset];
+        uint32_t sr1 = (uint32_t)sound_8k[rateOffset + 1U] << 8U;
+        uint32_t sr2 = (uint32_t)sound_8k[rateOffset + 2U] << 16U;
+        uint32_t sr3 = (uint32_t)sound_8k[rateOffset + 3U] << 24U;
+        musicConfig->sampleRate = sr0 | sr1 | sr2 | sr3;
+    }
 
-	musicConfig->delay = 1000000 / musicConfig->sampleRate;
+    if (musicConfig->sampleRate != 8000U)
+    {
+        musicConfig->errorCode = 2U;
+        return;
+    }
 
-	musicConfig->startFromByte += 4;
-
-	/* skip byte rate, align, bits per sample */
-	musicConfig->startFromByte += 8;
-
-	/* SubChunk2ID */
-	musicConfig->startFromByte += 4;
-
-	/* skip chunk size */
-	musicConfig->startFromByte += 4;
+    musicConfig->delay = 1000000U / musicConfig->sampleRate;
+    musicConfig->startFromByte = 44U;
+    musicConfig->errorCode = 0U;
 }
 
-void playMusic(MUSIC_CONFIG *musicConfig) {
-	uint32_t originalStartByte = musicConfig->startFromByte;
-	while (musicConfig->startFromByte++ < sound_sz) {
-		DAC_UpdateValue( LPC_DAC, (uint32_t) (sound_8k[musicConfig->startFromByte]));
-		Timer0_us_Wait(musicConfig->delay);
-	}
+void playMusic(MUSIC_CONFIG *musicConfig)
+{
+    uint32_t currentByte = 0U;
 
-	return 0;
+    if ((musicConfig == NULL) || (musicConfig->errorCode != 0U))
+    {
+        return;
+    }
+
+    currentByte = musicConfig->startFromByte;
+
+    while (currentByte < sound_sz)
+    {
+        DAC_UpdateValue(LPC_DAC, (uint32_t)sound_8k[currentByte]);
+        Timer0_us_Wait(musicConfig->delay);
+        currentByte++;
+    }
+
+    musicConfig->startFromByte = currentByte;
 }
-
