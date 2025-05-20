@@ -23,7 +23,7 @@ void oled_show_temp1(int32_t temperature, uint8_t* buf) {
         (void)snprintf((char*)buf, 16U, "%02ld.%ld C",
                        temperature / 10L,
                        temperature % 10L);
-        oled_putString((1U + 9U * 6U), 1U, buf,
+        oled_putString((1U + (9U * 6U)), 1U, buf,
                        OLED_COLOR_BLACK, OLED_COLOR_WHITE);
     }
 }
