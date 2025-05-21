@@ -4,7 +4,7 @@
 #include <stdint.h>
 
 /* I2C peripheral selection */
-static I2C_TypeDef * const I2CDEV = LPC_I2C2;  /* Used I2C peripheral */
+#define I2CDEV LPC_I2C2  /* Used I2C peripheral */
 
 /* Function declarations with full prototypes */
 void init_ssp(void);

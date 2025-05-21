@@ -21,7 +21,7 @@ void setupMusic(MUSIC_CONFIG *musicConfig)
     musicConfig->startFromByte = 0U;
     musicConfig->sampleRate = 0U;
     musicConfig->delay = 0U;
-    musicConfig->errorCode = 0U;
+
 
     /* Configure GPIO pins */
     gpioMask = (1U << 0U);
@@ -55,14 +55,6 @@ void setupMusic(MUSIC_CONFIG *musicConfig)
 
     DAC_Init(LPC_DAC);
 
-    /* Check WAV header */
-    if ((sound_8k[0U] != (uint8_t)'R') || (sound_8k[1U] != (uint8_t)'I') ||
-        (sound_8k[2U] != (uint8_t)'F') || (sound_8k[3U] != (uint8_t)'F'))
-    {
-        musicConfig->errorCode = 1U;
-        return;
-    }
-
     musicConfig->startFromByte = 20U;
 
     {
@@ -74,25 +66,16 @@ void setupMusic(MUSIC_CONFIG *musicConfig)
         musicConfig->sampleRate = sr0 | sr1 | sr2 | sr3;
     }
 
-    if (musicConfig->sampleRate != 8000U)
-    {
-        musicConfig->errorCode = 2U;
-        return;
-    }
 
     musicConfig->delay = 1000000U / musicConfig->sampleRate;
     musicConfig->startFromByte = 44U;
-    musicConfig->errorCode = 0U;
 }
 
 void playMusic(MUSIC_CONFIG *musicConfig)
 {
     uint32_t currentByte = 0U;
 
-    if ((musicConfig == NULL) || (musicConfig->errorCode != 0U))
-    {
-        return;
-    }
+
 
     currentByte = musicConfig->startFromByte;
 

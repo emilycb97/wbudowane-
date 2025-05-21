@@ -136,8 +136,8 @@ int main(void) {
 
         oled_show_temp1(temperature, buf);
         oled_show_temp2(bufTemp, buf);
-        oled_show_timer(time2, buf);
-        oled_show_clock(time, buf);
+        oled_show_timer(&time2, buf);
+        oled_show_clock(&time, buf);
 
         if(timerFinished) {
             playMusic(&musicConf);

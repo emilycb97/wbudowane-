@@ -1,2 +1,2 @@
-../src/music.c:11:6:setupMusic	24	static
-../src/music.c:87:6:playMusic	24	static
+../src/music.c:11:6:setupMusic	48	static
+../src/music.c:74:6:playMusic	24	static

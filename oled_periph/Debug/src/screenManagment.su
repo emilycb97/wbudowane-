@@ -1,5 +1,5 @@
-../src/screenManagment.c:11:6:oled_start	16	static
-../src/screenManagment.c:25:6:oled_show_temp1	24	static
-../src/screenManagment.c:38:6:oled_show_temp2	24	static
-../src/screenManagment.c:50:6:oled_show_timer	16	static
-../src/screenManagment.c:62:6:oled_show_clock	16	static
+../src/screenManagment.c:8:6:oled_start	16	static
+../src/screenManagment.c:21:6:oled_show_temp1	24	static
+../src/screenManagment.c:34:6:oled_show_temp2	24	static
+../src/screenManagment.c:46:6:oled_show_timer	24	static
+../src/screenManagment.c:58:6:oled_show_clock	24	static
