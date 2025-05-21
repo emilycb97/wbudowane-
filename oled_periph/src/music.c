@@ -75,16 +75,15 @@ void playMusic(MUSIC_CONFIG *musicConfig)
 {
     uint32_t currentByte = 0U;
 
-
-
     currentByte = musicConfig->startFromByte;
 
-    while (currentByte < sound_sz)
+    while (musicConfig->startFromByte < sound_sz)
     {
-        DAC_UpdateValue(LPC_DAC, (uint32_t)sound_8k[currentByte]);
+        DAC_UpdateValue(LPC_DAC, (uint32_t)sound_8k[musicConfig->startFromByte]);
         Timer0_us_Wait(musicConfig->delay);
-        currentByte++;
+        musicConfig->startFromByte++;
     }
 
     musicConfig->startFromByte = currentByte;
 }
+
